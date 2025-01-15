@@ -1,0 +1,149 @@
+import axios from 'axios';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './SignupPage.css';
+
+const Signup = () => {
+  const navigate = useNavigate();
+
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    password: '',
+    confirmPassword: ''
+  });
+
+  const [showPassword, setShowPassword] = useState(false);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const toggleShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (formData.password !== formData.confirmPassword) {
+      alert('Passwords do not match');
+      return;
+    }
+    if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      alert('Please enter a valid email address');
+      return;
+    }
+
+    try {
+      const response = await axios.post('http://localhost:5000/auth/signup', {
+        username: formData.username,
+        email: formData.email,
+        password: formData.password
+      });
+      alert('User registered successfully!');
+      navigate('/login');
+    } catch (error) {
+      console.error('Error during signup:', error);
+      alert('Signup failed: ' + (error.response ? error.response.data.message : error.message));
+    }
+  };
+
+  return (
+    <div className="signup-container">
+      <h4>Sign Up</h4>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            value={formData.username}
+            onChange={handleInputChange}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleInputChange}
+            required
+          />
+        </div>
+        <div>
+          <label htmlFor="password">Password</label>
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <input
+              type={showPassword ? 'text' : 'password'}
+              id="password"
+              name="password"
+              value={formData.password}
+              onChange={handleInputChange}
+              required
+            />
+            <button type="button" onClick={toggleShowPassword} style={{ marginLeft: '8px' }}>
+              {showPassword ? '🙈' : '👁️'}
+            </button>
+          </div>
+        </div>
+        <div>
+          <label htmlFor="confirmPassword">Confirm Password</label>
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <input
+              type={showPassword ? 'text' : 'password'}
+              id="confirmPassword"
+              name="confirmPassword"
+              value={formData.confirmPassword}
+              onChange={handleInputChange}
+              required
+            />
+            <button type="button" onClick={toggleShowPassword} style={{ marginLeft: '8px' }}>
+              {showPassword ? '🙈' : '👁️'}
+            </button>
+          </div>
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <div className="login-link">
+        Already have an account? <a href="/login">Login</a>
+      </div>
+    </div>
+  );
+};
+
+export default Signup;
+
+//Auth Controller
+
+exports.signup = async (req, res) => {
+  try {
+    const { username, email, password } = req.body;
+
+    // Check if user already exists
+    const existingUser = await User.findOne({ email });
+    if (existingUser) {
+      return res.status(400).json({ message: 'Email already registered' });
+    }
+
+    // Hash the password
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    // Create and save new user
+    const newUser = new User({ username, email, password: hashedPassword });
+    await newUser.save();
+
+    res.status(201).json({ message: 'User registered successfully' });
+  } catch (error) {
+    res.status(500).json({ message: 'Error registering user', error });
+  }
+};
+
+
+
+//auth controller

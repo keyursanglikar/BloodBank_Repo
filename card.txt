@@ -1,0 +1,36 @@
+/* CardComponent.css */
+
+/* Card styling */
+.card {
+    border: 1px solid #ccc; /* Border for the card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 8px 8px 8px rgba(0, 0, 5, 0.7); /* Subtle shadow */
+    transition: transform 0.2s ease; /* Smooth transform for hover */
+    overflow: hidden; /* Hide overflowing content */
+  
+  }
+  
+  /* Image styling */
+  .card-img-top {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Body styling */
+  .card-body {
+    padding: 16px; /* Padding inside the card body */
+
+  }
+  
+  /* Text styling */
+  .card-text {
+    font-size: 10px; /* Font size for the text */
+    color: #333; /* Text color */
+  }
+  
+  /* Hover effect */
+  .card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+  
+  }
+  

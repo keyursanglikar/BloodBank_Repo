@@ -1,0 +1,204 @@
+.gallery-body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+}
+
+.header h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(255, 255, 255, 0.2);
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox-image {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close:hover {
+  color: red;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s;
+}
+
+.prev:hover,
+.next:hover {
+  color: #007bff;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+/* Pagination Buttons */
+.pagination-controls {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.pagination-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.pagination-button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+/* Hover effects for focus */
+.pagination-button:focus {
+  outline: 2px solid #007bff;
+  background-color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .gallery-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .prev,
+  .next {
+    font-size: 2rem;
+  }
+
+  .close {
+    font-size: 1.8rem;
+  }
+
+  .header h2 {
+    font-size: 1.5rem;
+  }
+
+  .pagination-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .prev,
+  .next {
+    font-size: 1.5rem;
+  }
+
+  .close {
+    font-size: 1.5rem;
+  }
+
+  .header h2 {
+    font-size: 1.2rem;
+  }
+
+  .lightbox-image {
+    max-width: 95%;
+    max-height: 70%;
+  }
+
+  .pagination-button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}

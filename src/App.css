@@ -1,0 +1,144 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; /* Ensure this matches your inline styles if needed */
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  margin: 0 0;
+  height: 17vh; /* Use a fixed height to maintain consistency */
+  color: black;
+  border-bottom: 5px solid rgb(241, 228, 205);
+  z-index: 1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  
+  flex-direction: column; /* Stack items vertically */
+}
+
+.main-content {
+  flex-grow: 1; /* Allow main content to take up available space */
+  /* Adjust based on navbar height */
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Navigation Components
+/* Navigation.css */
+
+.auto-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f8f9fa; /* Light background for navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  
+}
+
+.logo img {
+  height: 50px; /* Adjust logo size */
+}
+
+.main-menu {
+  flex-grow: 1;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+}
+
+.navigation li {
+  position: relative; /* For dropdown positioning */
+  margin: 0 15px; /* Spacing between items */
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #333; /* Text color */
+  font-weight: 500; /* Bold font */
+  padding: 10px 15px; /* Padding around links */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.navigation a:hover {
+  background-color: #007bff; /* Background on hover */
+  color: white; /* Text color on hover */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.submenu {
+  display: none; /* Hide submenu initially */
+  position: absolute; /* Position submenu */
+  background-color: white; /* Background color for dropdown */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for dropdown */
+  z-index: 1000; /* Ensure dropdown is on top */
+}
+
+.navigation li:hover .submenu {
+  display: block; /* Show submenu on hover */
+}
+
+.submenu li {
+  margin: 0; /* Remove margin for submenu items */
+}
+
+.submenu a {
+  padding: 10px 20px; /* Padding for dropdown items */
+  color: #333; /* Text color for dropdown items */
+}
+
+.submenu a:hover {
+  background-color: #e9ecef; /* Background on hover for dropdown items */
+}
+
+
+
+/* Assuming you have a CSS file for your Navbar */

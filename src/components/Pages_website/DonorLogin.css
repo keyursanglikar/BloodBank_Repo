@@ -1,0 +1,571 @@
+.Donor-container {
+    max-width: 800px; /* Set a maximum width */
+    margin: 50px auto; /* Center the container with some margin from the top */
+    padding: 20px; /* Add padding */
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    border: 1px solid #e0e0e0; /* Light border */
+}
+.Donor-container .modal-content {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-direction: column; /* Align children in a row */
+    border-radius: 10px; /* Rounded corners for the content */
+  }
+  
+  .Donor-container .modal-header {
+    flex: 1; /* Allow header to take up space */
+    justify-content: center;
+  }
+  
+  .Donor-container .modal-body {
+    display: flex; /* Flex for body content */
+    width: 100%; /* Ensure full width */
+  }
+  
+  .Donor-container .form-signin {
+    flex: 1; /* Take equal space for the form */
+    margin-right: 20px; /* Space between form and register section */
+  }
+  
+  .Donor-container .well {
+    background-color: #f9f9f9; /* Slightly gray background for the well */
+    border-radius: 5px; /* Rounded corners for the well */
+    padding: 15px; /* Padding inside the well */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for the well */
+  }
+  
+  .Donor-container .generate-otp {
+    background-color: #dc3545; /* Bootstrap danger color */
+    border-color: #fe0019; /* Border color */
+    margin-left: 200px;
+    font-size: 15px;
+    padding: 5px;
+    color: #ffffff;
+    border-radius: 5px; 
+  }
+  .Donor-container .btn-Validate{
+    margin-left: 200px;
+    background-color: #dc3545; /* Bootstrap danger color */
+    border-color: #fe0019; /* Border color */
+    margin-left: 200px;
+    font-size: 15px;
+    padding: 5px;
+    color: #ffffff;
+    border-radius: 5px; 
+  
+  }
+ 
+  .Donor-container .btn-danger:hover {
+    background-color: #006ce7; /* Darker red on hover */
+  
+  }
+  
+  .Donor-container .control-label {
+    font-weight: bold; /* Bold labels */
+    
+  }
+  
+  .Donor-container .lead {
+    font-size: 1.25rem; /* Larger font size for the lead text */
+  }
+  
+  .Donor-container .list-unstyled {
+    padding-left: 0; /* Remove padding */
+  }
+  
+  .Donor-container .fa-check {
+    margin-right: 5px; /* Space between icon and text */
+  }
+  
+  .Donor-container .text-success {
+    color: #28a745; /* Bootstrap success color */
+  }
+  
+  .Donor-container .text-danger {
+    color: #dc3545; /* Bootstrap danger color */
+  }
+  
+  .Donor-container .form-control {
+    margin-top: 10px; /* Add space above inputs */
+  }
+  
+  /* Additional styles for register section */
+  .Donor-container .register-section {
+    flex: 1; /* Make the register section take equal space */
+    padding: 15px; /* Padding for the register section */
+    background-color: #f9f9f9; /* Slightly gray background */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for register section */
+    justify-content: center;
+  }
+  @media (max-width: 769px) {
+    .Donor-container {
+      width: 100%; /* Use more screen width */
+      margin: 30px auto; /* Center the container */
+      padding: 15px; /* Adjust padding for mid-sized screens */
+      border-radius: 10px; /* Slightly larger rounded corners */
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3); /* Softer shadow */
+    }
+  
+    .Donor-container .modal-content {
+      flex-direction: column; /* Content stacked vertically */
+      border-radius: 10px;
+    }
+  
+    .Donor-container .modal-header {
+      text-align: center;
+      padding: 12px; /* Slightly more padding */
+    }
+  
+    .Donor-container .modal-body {
+      display: block;
+      width: 100%; /* Full width */
+    }
+  
+    .Donor-container .form-signin {
+      margin: 0 auto; /* Center the form */
+      padding: 12px;
+    }
+  
+    .Donor-container .well {
+      padding: 12px;
+      font-size: 1rem; /* Adjust font size */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    }
+  
+    .Donor-container .generate-otp,
+    .Donor-container .btn-Validate {
+      margin-left: 18%; /* Center buttons */
+      margin-top: 12px; /* Add spacing between buttons */
+      width: 60vw; /* Adjust button width */
+      font-size: 16px; /* Slightly larger font size */
+      padding: 6px; /* Adjust padding */
+    }
+  
+    .Donor-container .btn-danger:hover {
+      background-color: #004a99; /* Adjust hover color */
+    }
+  
+    .Donor-container .control-label {
+      font-size: 0.95rem; /* Slightly larger font size */
+      display: block;
+      width: 60vw; /* Adjust width */
+    }
+  
+    .col-sm-12 {
+      width: 100%;
+    }
+  
+    .phninput {
+      width: 90%; /* Adjust phone input width */
+    }
+  
+    .Donor-container .lead {
+      font-size: 1.1rem; /* Adjust lead text size */
+    }
+  
+    .Donor-container .form-control {
+      font-size: 1rem; /* Slightly larger font size */
+      margin-top: 10px; /* Adjust spacing */
+    }
+  
+    .Donor-container .register-section {
+      margin-top: 20px;
+      padding: 12px;
+      font-size: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+  
+    .Donor-container .list-unstyled {
+      font-size: 0.9rem;
+    }
+  
+    .Donor-container .fa-check {
+      margin-right: 5px;
+    }
+  
+    .Donor-container .btn-register {
+      width: 60vw;
+      margin-left: 18%; /* Center button */
+      margin-top: 10px;
+    }
+  }
+  
+
+  @media (max-width: 426px) {
+    .Donor-container {
+      width:100%; /* Adjust width to fit the screen */
+      margin: 20px auto; /* Center the container with less margin */
+      padding: 10px; /* Reduce padding for smaller screens */
+      border-radius: 8px; /* Slightly smaller rounded corners */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); /* Softer shadow */
+    }
+    
+    .Donor-container .modal-content {
+      flex-direction: column; /* Keep content stacked vertically */
+      border-radius: 8px; /* Adjust corners */
+    }
+    
+    .Donor-container .modal-header {
+      text-align: center; /* Center-align header content */
+      padding: 10px; /* Reduce padding */
+    }
+    
+    .Donor-container .modal-body {
+      display: block; /* Switch to block layout for content */
+      width: 100%; /* Full width */
+    }
+    
+    .Donor-container .form-signin {
+      margin: 0 auto; /* Center the form */
+      padding: 10px; /* Add padding for better spacing */
+    }
+    
+    .Donor-container .well {
+      padding: 10px; /* Reduce padding */
+      font-size: 0.9rem; /* Slightly smaller font size */
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    }
+    
+    .Donor-container .generate-otp,
+    .Donor-container .btn-Validate {
+      margin-left: 22%; /* Remove left margin */
+      margin-top: 10px; /* Add spacing between buttons */
+      width: 50vw; /* Make buttons full-width */
+      font-size: 14px; /* Reduce font size slightly */
+      padding: 4px; /* Adjust padding for smaller buttons */
+    }
+    
+    .Donor-container .btn-danger:hover {
+      background-color: #0056b3; /* Adjust hover color */
+    }
+    
+    .Donor-container .control-label {
+      font-size: 0.85rem; /* Smaller font size */
+      display: block; /* Ensure labels appear above inputs */
+      width: 50vw;
+    }
+    
+    .col-sm-12 {
+      width: 100vw;
+    }
+  
+  
+    .phninput{
+      width: 80%;
+    }
+    .Donor-container .lead {
+      font-size: 1rem; /* Adjust lead text size */
+    }
+    
+    .Donor-container .form-control {
+      font-size: 0.9rem; /* Smaller font size for inputs */
+      margin-top: 8px; /* Reduce spacing above inputs */
+    }
+    
+    .Donor-container .register-section {
+      margin-top: 15px; /* Add spacing above register section */
+      padding: 10px; /* Reduce padding */
+      font-size: 0.9rem; /* Smaller font size */
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    }
+    
+    .Donor-container .list-unstyled {
+      font-size: 0.85rem; /* Smaller font size */
+    }
+    
+    .Donor-container .fa-check {
+      margin-right: 3px; /* Adjust spacing for smaller text */
+    }
+  
+  
+    .Donor-container .btn-register{
+      width: 50vw;
+      margin-left: 22%;
+    }
+  }
+  
+
+  
+
+  @media (max-width: 394px) {
+    .Donor-container {
+      width:100%; /* Adjust width to fit the screen */
+      margin: 20px auto; /* Center the container with less margin */
+      padding: 10px; /* Reduce padding for smaller screens */
+      border-radius: 8px; /* Slightly smaller rounded corners */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); /* Softer shadow */
+    }
+    
+    .Donor-container .modal-content {
+      flex-direction: column; /* Keep content stacked vertically */
+      border-radius: 8px; /* Adjust corners */
+    }
+    
+    .Donor-container .modal-header {
+      text-align: center; /* Center-align header content */
+      padding: 10px; /* Reduce padding */
+    }
+    
+    .Donor-container .modal-body {
+      display: block; /* Switch to block layout for content */
+      width: 100%; /* Full width */
+    }
+    
+    .Donor-container .form-signin {
+      margin: 0 auto; /* Center the form */
+      padding: 10px; /* Add padding for better spacing */
+    }
+    
+    .Donor-container .well {
+      padding: 10px; /* Reduce padding */
+      font-size: 0.9rem; /* Slightly smaller font size */
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    }
+    
+    .Donor-container .generate-otp,
+    .Donor-container .btn-Validate {
+      margin-left: 22%; /* Remove left margin */
+      margin-top: 10px; /* Add spacing between buttons */
+      width: 50vw; /* Make buttons full-width */
+      font-size: 14px; /* Reduce font size slightly */
+      padding: 4px; /* Adjust padding for smaller buttons */
+    }
+    
+    .Donor-container .btn-danger:hover {
+      background-color: #0056b3; /* Adjust hover color */
+    }
+    
+    .Donor-container .control-label {
+      font-size: 0.85rem; /* Smaller font size */
+      display: block; /* Ensure labels appear above inputs */
+      width: 50vw;
+    }
+    
+    .col-sm-12 {
+      width: 100vw;
+    }
+  
+  
+    .phninput{
+      width: 80%;
+    }
+    .Donor-container .lead {
+      font-size: 1rem; /* Adjust lead text size */
+    }
+    
+    .Donor-container .form-control {
+      font-size: 0.9rem; /* Smaller font size for inputs */
+      margin-top: 8px; /* Reduce spacing above inputs */
+    }
+    
+    .Donor-container .register-section {
+      margin-top: 15px; /* Add spacing above register section */
+      padding: 10px; /* Reduce padding */
+      font-size: 0.9rem; /* Smaller font size */
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    }
+    
+    .Donor-container .list-unstyled {
+      font-size: 0.85rem; /* Smaller font size */
+    }
+    
+    .Donor-container .fa-check {
+      margin-right: 3px; /* Adjust spacing for smaller text */
+    }
+  
+  
+    .Donor-container .btn-register{
+      width: 50vw;
+      margin-left: 25%
+    }
+  }
+  @media (max-width: 376px) {
+    .Donor-container {
+      width:100%; /* Adjust width to fit the screen */
+      margin: 20px auto; /* Center the container with less margin */
+      padding: 10px; /* Reduce padding for smaller screens */
+      border-radius: 8px; /* Slightly smaller rounded corners */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); /* Softer shadow */
+    }
+    
+    .Donor-container .modal-content {
+      flex-direction: column; /* Keep content stacked vertically */
+      border-radius: 8px; /* Adjust corners */
+    }
+    
+    .Donor-container .modal-header {
+      text-align: center; /* Center-align header content */
+      padding: 10px; /* Reduce padding */
+    }
+    
+    .Donor-container .modal-body {
+      display: block; /* Switch to block layout for content */
+      width: 100%; /* Full width */
+    }
+    
+    .Donor-container .form-signin {
+      margin: 0 auto; /* Center the form */
+      padding: 10px; /* Add padding for better spacing */
+    }
+    
+    .Donor-container .well {
+      padding: 10px; /* Reduce padding */
+      font-size: 0.9rem; /* Slightly smaller font size */
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    }
+    
+    .Donor-container .generate-otp,
+    .Donor-container .btn-Validate {
+      margin-left: 20%; /* Remove left margin */
+      margin-top: 10px; /* Add spacing between buttons */
+      width: 50vw; /* Make buttons full-width */
+      font-size: 14px; /* Reduce font size slightly */
+      padding: 4px; /* Adjust padding for smaller buttons */
+    }
+    
+    .Donor-container .btn-danger:hover {
+      background-color: #0056b3; /* Adjust hover color */
+    }
+    
+    .Donor-container .control-label {
+      font-size: 0.85rem; /* Smaller font size */
+      display: block; /* Ensure labels appear above inputs */
+      width: 50vw;
+    }
+    
+    .col-sm-12 {
+      width: 100vw;
+    }
+  
+  
+    .phninput{
+      width: 80%;
+    }
+    .Donor-container .lead {
+      font-size: 1rem; /* Adjust lead text size */
+    }
+    
+    .Donor-container .form-control {
+      font-size: 0.9rem; /* Smaller font size for inputs */
+      margin-top: 8px; /* Reduce spacing above inputs */
+    }
+    
+    .Donor-container .register-section {
+      margin-top: 15px; /* Add spacing above register section */
+      padding: 10px; /* Reduce padding */
+      font-size: 0.9rem; /* Smaller font size */
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    }
+    
+    .Donor-container .list-unstyled {
+      font-size: 0.85rem; /* Smaller font size */
+    }
+    
+    .Donor-container .fa-check {
+      margin-right: 3px; /* Adjust spacing for smaller text */
+    }
+  
+  
+    .Donor-container .btn-register{
+      width: 50vw;
+      margin-left: 20%
+    }
+  }
+  
+  
+  
+  @media (max-width: 321px) {
+  .Donor-container {
+    width:100%; /* Adjust width to fit the screen */
+    margin: 20px auto; /* Center the container with less margin */
+    padding: 10px; /* Reduce padding for smaller screens */
+    border-radius: 8px; /* Slightly smaller rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); /* Softer shadow */
+  }
+  
+  .Donor-container .modal-content {
+    flex-direction: column; /* Keep content stacked vertically */
+    border-radius: 8px; /* Adjust corners */
+  }
+  
+  .Donor-container .modal-header {
+    text-align: center; /* Center-align header content */
+    padding: 10px; /* Reduce padding */
+  }
+  
+  .Donor-container .modal-body {
+    display: block; /* Switch to block layout for content */
+    width: 100%; /* Full width */
+  }
+  
+  .Donor-container .form-signin {
+    margin: 0 auto; /* Center the form */
+    padding: 10px; /* Add padding for better spacing */
+  }
+  
+  .Donor-container .well {
+    padding: 10px; /* Reduce padding */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  }
+  
+  .Donor-container .generate-otp,
+  .Donor-container .btn-Validate {
+    margin-left: 20%; /* Remove left margin */
+    margin-top: 10px; /* Add spacing between buttons */
+    width: 50vw; /* Make buttons full-width */
+    font-size: 14px; /* Reduce font size slightly */
+    padding: 4px; /* Adjust padding for smaller buttons */
+  }
+  
+  .Donor-container .btn-danger:hover {
+    background-color: #0056b3; /* Adjust hover color */
+  }
+  
+  .Donor-container .control-label {
+    font-size: 0.85rem; /* Smaller font size */
+    display: block; /* Ensure labels appear above inputs */
+    width: 50vw;
+  }
+  
+  .col-sm-12 {
+    width: 100vw;
+  }
+
+
+  .phninput{
+    width: 80%;
+  }
+  .Donor-container .lead {
+    font-size: 1rem; /* Adjust lead text size */
+  }
+  
+  .Donor-container .form-control {
+    font-size: 0.9rem; /* Smaller font size for inputs */
+    margin-top: 8px; /* Reduce spacing above inputs */
+  }
+  
+  .Donor-container .register-section {
+    margin-top: 15px; /* Add spacing above register section */
+    padding: 10px; /* Reduce padding */
+    font-size: 0.9rem; /* Smaller font size */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  }
+  
+  .Donor-container .list-unstyled {
+    font-size: 0.85rem; /* Smaller font size */
+  }
+  
+  .Donor-container .fa-check {
+    margin-right: 3px; /* Adjust spacing for smaller text */
+  }
+
+
+  .Donor-container .btn-register{
+    width: 50vw;
+   margin-left: 20%;
+  }
+}
+

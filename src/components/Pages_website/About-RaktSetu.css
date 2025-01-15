@@ -1,0 +1,70 @@
+/* About-RaktSetu.css */
+
+.about-page {
+  background-color: #ffffff; /* White background for the main content */
+  color: #333; /* Text color */
+  font-family: 'Arial', sans-serif;
+  padding: 40px; /* Increased padding */
+  max-width: 800px; /* Fixed width */
+  margin: 40px auto; /* Centered with margin */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+  position: relative; /* Positioning for pseudo-elements */
+  z-index: 0; /* Ensure content is above any background */
+}
+
+.about-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(240, 240, 240, 0.3); /* Light overlay */
+  border-radius: 12px; /* Match container's border radius */
+  z-index: -1; /* Behind the content */
+}
+
+.about-page h1 {
+  text-align: center;
+  color: #ff0a0a; /* Red color */
+  margin-bottom: 30px; /* More space below */
+  font-size: 2.5em; /* Larger font size */
+  font-weight: bold; /* Bold font */
+}
+
+.about-page h2 {
+  color: #f40202; /* Dark red color */
+  margin-top: 25px; /* More space above */
+  margin-bottom: 15px; /* More space below */
+  font-size: 1.8em; /* Slightly larger */
+  font-weight: bold; /* Bold font */
+}
+
+.about-page p {
+  line-height: 1.8; /* Increased line height for readability */
+  margin-bottom: 20px; /* More space below paragraphs */
+  font-size: 1.1em; /* Slightly larger font size */
+}
+
+.about-page ul,
+.about-page ol {
+  margin-left: 20px;
+  margin-bottom: 30px; /* More space below lists */
+}
+
+.about-page li {
+  margin-bottom: 12px; /* More space between list items */
+}
+
+.about-page strong {
+  color: #d32f2f; /* Dark red color */
+}
+
+.about-page ul {
+  list-style-type: disc;
+}
+
+.about-page ol {
+  list-style-type: decimal;
+}

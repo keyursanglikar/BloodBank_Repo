@@ -1,0 +1,76 @@
+/* Services.css */
+
+/* Container for services */
+.services-container {
+    text-align: center; /* Center-align text */
+    padding: 20px;
+    display: flex;
+    flex:grid;
+    flex-direction: column;
+    justify-content: center;
+   
+  background-color: rgb(255, 248, 248);
+    background-size: cover;
+ 
+    height: 60vh;
+    
+  
+ 
+  }
+  
+  .textS{
+    margin-bottom: 20px;
+    color: rgb(180, 31, 31);
+    font-size: 50px;
+   
+  
+     /* Margin below the title */
+  }
+  
+  /* Grid layout for services */
+  .services-grid {
+    display: grid;
+    margin-top:40px;
+   /* Using CSS grid */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 90px; /* Space between cards */
+    margin-left: 320px;
+  }
+  
+  /* Card styling */
+  .service-card {
+    border: 1px solid #ccc; /* Border for the card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    padding: 20px; /* Padding inside the card */
+    transition: transform 0.2s; /* Smooth transform for hover */
+    background-color: #fff; /* White background */
+    height: 230px;
+    width: 250px;
+    cursor: pointer;
+    border:1px solid rgb(146, 146, 146);
+  }
+  
+  .service-card:hover {
+    transform: scale(1.15); /* Slightly enlarge the card on hover */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.45);
+  }
+  
+  .icon {
+    font-size: 40px; /* Icon size */
+    margin-bottom: 10px;
+    margin-top:5px; /* Space below icon */
+  }
+  
+  .Card-title {
+    font-size: 1.8rem; /* Title size */
+    margin: 10px 0; /* Margin around title */
+  }
+  
+  .Card-description {
+    margin-top:20px;
+    font-size: 1.5rem; /* Description size */
+    color: #666; /* Color for description */
+  }
+  

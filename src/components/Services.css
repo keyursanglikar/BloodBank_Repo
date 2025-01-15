@@ -1,0 +1,326 @@
+/* Container for services */
+.services-container {
+  text-align: center;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(255, 248, 248);
+  background-size: cover;
+  height: auto;
+}
+
+/* Title styling */
+.textS {
+  margin-bottom: 2vw;
+  color: rgb(180, 31, 31);
+  font-size: 4vw; /* Base responsive font size */
+}
+
+/* Grid layout for services */
+.services-grid {
+  display: grid;
+  margin-top: 4vw;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2vw;
+  padding: 0 2vw;
+}
+
+/* Card styling */
+.service-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.15);
+  padding: 2vw;
+  transition: transform 0.2s;
+  background-color: #fff;
+  height: 40vh;
+  cursor: pointer;
+  width: 100%;
+  max-width: 100%;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 10px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon styling */
+.icon {
+  font-size: 3vw;
+  margin: 1vw 0;
+}
+
+/* Card title styling */
+.Card-title {
+  font-size: 1.8vw;
+  margin: 1vw 0;
+}
+
+/* Card description styling */
+.Card-description {
+  margin-top: 1vw;
+  font-size: 1.5vw;
+  color: #666;
+}
+
+
+
+/* Extra-large screens (desktops, 1200px and up) */
+
+
+/* Large devices (laptops, 992px and up) */
+@media only screen and (max-width: 2561px) {
+  .textS {
+    font-size: 3vw;
+  }
+  .icon {
+    font-size: 2.5vw;
+  }
+  .Card-title {
+    font-size: 1.7vw;
+  }
+  .Card-description {
+    font-size: 1.4vw;
+  }
+  .service-card {
+    padding: 2vw;
+    height: auto;
+    width: 40vh;
+  }
+
+  .services-grid {
+    display: grid;
+    margin-top: 4vw;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2vw;
+    padding: 0 2vw;
+  }
+}
+
+
+@media only screen and (max-width: 1921px) {
+  .textS {
+    font-size: 2.5vw;
+  }
+  .icon {
+    font-size: 2vw;
+  }
+  .Card-title {
+    font-size: 1.5vw;
+  }
+  .Card-description {
+    font-size: 1.2vw;
+  }
+  .service-card {
+    padding: 1.5vw;
+    height: auto;
+    width: 18vw;
+  }
+  .services-grid {
+    display: grid;
+    margin-top: 4vw;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 2vw;
+    padding: 0 2vw;
+  }
+}
+
+@media only screen and (max-width: 1441px) {
+  .textS {
+    font-size: 2.5vw;
+  }
+  .icon {
+    font-size: 2vw;
+  }
+  .Card-title {
+    font-size: 1.5vw;
+  }
+  .Card-description {
+    font-size: 1.2vw;
+  }
+  .service-card {
+    padding: 1.5vw;
+    height: auto;
+    width: 18vw;
+  }
+  .services-grid {
+    display: grid;
+    margin-top: 4vw;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 2vw;
+    padding: 0 2vw;
+  }
+}
+
+
+@media only screen and (max-width: 1025px) {
+  .textS {
+    font-size: 2.5vw;
+  }
+  .icon {
+    font-size: 2vw;
+  }
+  .Card-title {
+    font-size: 1.5vw;
+  }
+  .Card-description {
+    font-size: 1.2vw;
+  }
+  .service-card {
+    padding: 1.5vw;
+    height: auto;
+    width: 20vw;
+  }
+  .services-grid {
+    display: grid;
+    margin-top: 4vw;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 2vw;
+    padding: 0 2vw;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media  only screen and (max-width: 769px) {
+  .textS {
+    font-size: 5vw;
+  }
+  .icon {
+    font-size: 3.5vw;
+  }
+  .Card-title {
+    font-size: 2.3vw;
+  }
+  .Card-description {
+    font-size: 1.8vw;
+  }
+  .service-card {
+    padding: 3vw;
+    height: auto;
+    width: 50vw;
+  }
+  .services-grid {
+    display: grid;
+    margin-top: 4vw;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 2vw;
+    padding: 0 2vw;
+  }
+}
+
+/* Small devices (phones, 600px and up) */
+@media only screen and (max-width: 426px) {
+  
+  .services-container {
+    text-align: center;
+    padding: 2vw;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 248, 248);
+    background-size: cover;
+    height: auto;
+  }
+
+
+  .textS {
+    font-size: 7vw;
+  }
+  .icon {
+    font-size: 1vw;
+   
+  }
+  .Card-title {
+    font-size: 3.5vw;
+  }
+  .Card-description {
+    font-size: 2.8vw;
+  }
+  .service-card {
+    width: 100vw;
+    padding: 4vw;
+    height: auto;
+  }
+
+  .services-grid {
+    display: grid;
+    margin-top: 4vw;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 2vw;
+    padding: 0 2vw;
+  }
+}
+
+/* Extra-small devices (extra-small phones, 400px and below) */
+@media only screen and (max-width: 376px) {
+  .textS {
+    font-size: 7vw;
+  }
+  .icon {
+    font-size: 5vw;
+  }
+  .Card-title {
+    font-size: 3.5vw;
+  }
+  .Card-description {
+    font-size: 2.8vw;
+  }
+  .service-card {
+    padding: 4vw;
+    height: auto;
+    width:40vw;
+  }
+  .services-grid {
+    display: grid;
+    margin-top: 4vw;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 2vw;
+    padding: 0 2vw;
+  }
+}
+
+@media  only screen and (max-width: 321px) {
+
+
+  .services-container {
+    text-align: center;
+    padding: 2vw;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 248, 248);
+    background-size: cover;
+    height: auto;
+  }
+
+
+  .textS {
+    font-size: 7vw;
+  }
+  .icon {
+    font-size: 1vw;
+   
+  }
+  .Card-title {
+    font-size: 3.5vw;
+  }
+  .Card-description {
+    font-size: 2.8vw;
+  }
+  .service-card {
+    width: 50vw;
+    padding: 4vw;
+    height: auto;
+  }
+
+  .services-grid {
+    display: grid;
+    margin-top: 4vw;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 2vw;
+    padding: 0 2vw;
+  }
+}

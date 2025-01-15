@@ -1,0 +1,57 @@
+/* CardComponent.css */
+
+/* Card styling */
+.card {
+  border: 1px solid #ccc; /* Border for the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 8px 8px 8px rgba(0, 0, 5, 0.7); /* Subtle shadow */
+  transition: transform 0.2s ease; /* Smooth transform for hover */
+  overflow: hidden; /* Hide overflowing content */
+  width: 50%; /* Full width for responsive design */
+  max-width: 100px; /* Set a maximum width */
+  margin: 10px auto; /* Center the card horizontally with some margin */
+}
+
+/* Image styling */
+.card-img-top {
+  width: 100%; /* Full width of the card */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure image fits well inside the card */
+}
+
+/* Body styling */
+.card-body {
+  padding: 16px; /* Padding inside the card body */
+}
+
+/* Text styling */
+.card-text {
+  font-size: 14px; /* Adjusted font size for readability */
+  color: #333; /* Text color */
+}
+
+/* Hover effect */
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+      max-width: 50%; /* Adjust card width for smaller screens */
+  }
+
+  .card-text {
+      font-size: 12px; /* Slightly smaller text for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+      max-width: 50%; /* Full width for mobile screens */
+  }
+
+  .card-text {
+      font-size: 10px; /* Further adjust text size for mobile */
+  }
+}

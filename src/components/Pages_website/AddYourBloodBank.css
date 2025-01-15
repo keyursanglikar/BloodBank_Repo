@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+.Bloodform-container {
+  max-width: 90vw;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.Bloodform-container h2,
+.Bloodform-container h3 {
+  text-align: center;
+  margin: 0;
+  color:red;
+}
+
+.Bloodform-container .form-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Four columns */
+  gap: 20px; /* Space between inputs */
+}
+
+.Bloodform-container .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px; /* Space below each form group */
+}
+
+.Bloodform-container label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.Bloodform-container input,
+.Bloodform-container select,
+.Bloodform-container textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.Bloodform-container input:focus,
+.Bloodform-container select:focus,
+.Bloodform-container textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.Bloodform-container .error-message {
+  color: red;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.Bloodform-container button {
+  padding: 10px 15px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Bloodform-container button:hover {
+  background-color: #0056b3;
+}
+
+.Bloodform-container button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

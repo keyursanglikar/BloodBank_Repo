@@ -1,0 +1,423 @@
+/* General container styling */
+.Avacontainer {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1200px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.page-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.page-header h3 {
+  font-size: 24px;
+  color: #d9534f;
+  font-weight: bold;
+}
+
+/* Panel styles */
+.panel {
+  border: 1px solid #d9534f;
+  border-radius: 8px;
+}
+.panel-heading {
+  background-color: #d9534f;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.panel-body {
+  padding: 15px;
+}
+
+/* Row styling */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Column styling */
+.col-md-3 {
+  flex: 1 1 23%;
+  min-width: 200px;
+}
+
+/* Form control styling */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.2s;
+}
+
+.form-control:focus {
+  border-color: #d9534f;
+  outline: none;
+  box-shadow: 0 0 5px rgba(217, 83, 79, 0.5);
+}
+
+/* Button styling */
+.btn {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.btn-danger {
+  background-color: #d9534f;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c9302c;
+}
+
+.btn-block {
+  display: flex;
+  width: 200px;
+  height: 38px;
+  margin:0px;
+}
+
+/* Blood bank results */
+.blood-bank-results {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.blood-bank-results h4 {
+  font-size: 18px;
+  color: #d9534f;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.blood-bank-results ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.blood-bank-results li {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.blood-bank-results li:last-child {
+  border-bottom: none;
+}
+
+.blood-bank-results p {
+  color: #666;
+  font-size: 14px;
+}
+
+
+
+@media only screen and (max-width: 394px) {
+  /* General container styling */
+  .Avacontainer {
+    margin: 10px auto;
+    padding: 10px;
+    width: 100%; /* Use percentage instead of vw to avoid scrollbar overflow */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensures padding is included in width */
+  }
+
+  /* Header styles */
+  .page-header {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .page-header h3 {
+    font-size: 18px;
+    color: #d9534f;
+    font-weight: bold;
+  }
+
+  /* Panel styles */
+  .panel {
+    border: 1px solid #d9534f;
+    border-radius: 8px;
+    margin-bottom: 10px; /* Prevent panels from touching each other */
+  }
+
+  .panel-heading {
+    background-color: #d9534f;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .panel-body {
+    padding: 8px;
+  }
+
+  /* Row styling */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Adds spacing between columns */
+    width: 100%; /* Ensures it fits in the container */
+    box-sizing: border-box; /* Prevents overflow */
+    margin: 0; /* Avoids extra margin around the row */
+  }
+
+  /* Column styles */
+  .col-md-3 {
+    flex: 1 1 calc(50% - 8px); /* Columns take 50% minus gap space */
+    min-width: 120px; /* Prevents shrinking too small */
+    max-width: calc(50% - 8px); /* Matches flex basis */
+    box-sizing: border-box; /* Ensures padding/borders don’t cause overflow */
+
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+  }
+
+  /* Form control styling */
+  .form-control {
+    width: 100%; /* Avoid using vw to prevent overflow */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; /* Adds space between form elements */
+  }
+
+  .form-control:focus {
+    border-color: #d9534f;
+    outline: none;
+    box-shadow: 0 0 4px rgba(217, 83, 79, 0.5);
+  }
+
+  /* Button styling */
+  .btn {
+    padding: 8px;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    display: block; /* Makes buttons full width */
+    width: 100%; /* Ensures buttons fit within the container */
+  }
+
+  .btn-danger {
+    background-color: #f6120b;
+    color: white;
+  }
+
+  .btn-danger:hover {
+    background-color: #f62e27;
+  }
+
+  /* Blood bank results */
+  .blood-bank-results {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+  .blood-bank-results h4 {
+    font-size: 16px;
+    color: #d9534f;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .blood-bank-results ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .blood-bank-results li {
+    padding: 6px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .blood-bank-results li:last-child {
+    border-bottom: none;
+  }
+
+  .blood-bank-results p {
+    color: #666;
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+@media only screen and (max-width: 321px) {
+  /* General container styling */
+  .Avacontainer {
+    margin: 0 auto; /* Center the container */
+    padding: 8px; /* Compact padding */
+    width: 100%; /* Full width within parent */
+    max-width: 100%; /* Ensure no overflow */
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+
+  /* Header styles */
+  .page-header {
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .page-header h3 {
+    font-size: 16px;
+    color: #d9534f;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  /* Panel styles */
+  .panel {
+    border: 1px solid #d9534f;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  .panel-heading {
+ 
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 6px 6px 0 0;
+    text-align: center;
+  }
+
+  .panel-body {
+    padding: 8px;
+  }
+
+  /* Row styling */
+  .row {
+    display: flex;
+    flex-wrap: wrap; /* Ensures items wrap to fit smaller screens */
+    gap: 6px;
+    width: 100%; /* Ensures no overflow */
+    margin: 0; /* Removes default margins */
+    padding: 0; /* Avoids extra spacing */
+    box-sizing: border-box;
+  }
+
+  /* Column styles */
+  .col-md-3 {
+    flex: 1 1 calc(50% - 6px); /* Columns take 50% of row width minus gap */
+    max-width: calc(50% - 6px);
+    min-width: 140px; /* Prevents columns from becoming too narrow */
+    box-sizing: border-box;
+    padding: 6px;
+    text-align: center;
+    color: white;
+   
+    border-radius: 4px;
+  }
+
+  /* Form control styling */
+  .form-control {
+    width: 100%; /* Full width for smaller screens */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; /* Adds spacing between form elements */
+  }
+
+  .form-control:focus {
+    border-color: #d9534f;
+    outline: none;
+    box-shadow: 0 0 3px rgba(217, 83, 79, 0.5);
+  }
+
+  /* Button styling */
+  .btn {
+    padding: 8px;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    display: block;
+    width: 100%; /* Ensures full-width buttons */
+    box-sizing: border-box;
+  }
+
+  .btn-danger {
+    background-color: #f6120b;
+    color: white;
+  }
+
+  .btn-danger:hover {
+    background-color: #f62e27;
+  }
+
+  /* Blood bank results */
+  .blood-bank-results {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+
+  .blood-bank-results h4 {
+    font-size: 14px;
+    color: #d9534f;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  .blood-bank-results ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .blood-bank-results li {
+    padding: 6px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .blood-bank-results li:last-child {
+    border-bottom: none;
+  }
+
+  .blood-bank-results p {
+    color: #666;
+    font-size: 12px;
+  }
+}

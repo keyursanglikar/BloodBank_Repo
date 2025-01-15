@@ -1,0 +1,48 @@
+.container {
+    max-width: 800px; /* Set a maximum width for the container */
+    margin: 20px auto; /* Center the container */
+    padding: 15px; /* Add some padding */
+}
+
+.panel-group {
+    margin-bottom: 15px; /* Space between panels */
+}
+
+.panel {
+    border: 1px solid #dc3545; /* Bootstrap's danger panel border color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.panel-heading {
+    background-color: #dc3545; /* Bootstrap's danger panel background */
+    color: white; /* White text color */
+    font-size: 1.25em; /* Larger font size */
+    padding: 10px; /* Padding for heading */
+}
+
+.panel-body {
+    padding: 15px; /* Padding for body */
+    font-size: 1em; /* Font size for body */
+    color: #333; /* Dark gray color for body text */
+}
+
+/* Link styles */
+.panel-body a {
+    color: #dc3545; /* Link color matching the panel */
+    text-decoration: underline; /* Underline for links */
+}
+
+.panel-body a:hover {
+    color: #c82333; /* Darker shade on hover */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .panel-heading {
+        font-size: 1.1em; /* Smaller font size on mobile */
+    }
+
+    .panel-body {
+        font-size: 0.9em; /* Smaller body font size on mobile */
+    }
+}

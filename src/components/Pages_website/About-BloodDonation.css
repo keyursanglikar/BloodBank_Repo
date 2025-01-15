@@ -1,0 +1,71 @@
+/* General page styling */
+.about-blood-donation {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Hero section styling */
+  .hero-section {
+    background-color: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+  
+  .hero-section h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  .hero-section p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  /* Information container styling */
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Individual info box styling */
+  .info-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .info-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .info-box h2 {
+    font-size: 24px;
+    color: #d32f2f;
+    margin-bottom: 10px;
+  }
+  
+  .info-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 28px;
+    }
+  
+    .info-box {
+      padding: 15px;
+    }
+  }
+  

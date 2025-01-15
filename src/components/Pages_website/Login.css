@@ -1,0 +1,204 @@
+.login-page-container {
+  max-width: 400px; /* Adjust the maximum width */
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 60px; /* Space from the top */
+  width: 100%;
+}
+
+.login-page-container h2 {
+  text-align: center;
+}
+
+.login-page-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-page-container label {
+  margin-bottom: 8px;
+}
+
+.login-page-container input {
+  margin-bottom: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Ensure full width */
+}
+
+.login-page-container .password-input-container {
+  position: relative;
+  margin-bottom: 16px; /* Space below the password input */
+}
+
+.password-input-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Ensure full width */
+}
+
+.password-input-wrapper input {
+  flex-grow: 1; /* Allows input to take available space */
+  padding-right: 40px; /* Space for the eye icon */
+}
+
+.login-page-container .password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for exact centering */
+  cursor: pointer;
+  z-index: 1; /* Make sure it's on top */
+}
+
+.login-page-container button {
+  padding: 10px;
+  margin-bottom: 10px; /* Space between buttons */
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-page-container button:hover {
+  background-color: #0056b3;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forgot-password {
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px; /* Space above */
+  color: blue; /* Color for visibility */
+  text-decoration: underline; /* Underline for emphasis */
+}
+
+.success-message {
+  color: green;
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 2561px) {
+  .login-page-container {
+    max-width: 700px;
+    margin: 80px auto; /* Center horizontally and add vertical spacing */
+  }
+}
+
+@media (max-width: 1441px) {
+  .login-page-container {
+    max-width: 50%; /* Responsive width */
+    margin: 80px auto; /* Center horizontally and add vertical spacing */
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1369px) {
+  .login-page-container {
+    max-width: 30%; /* Slightly smaller on smaller screens */
+    margin: 80px auto; /* Maintain vertical spacing */
+    padding: 20px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .login-page-container {
+    max-width: 70%; /* Adjust width for medium screens */
+    margin: 80px auto; /* Keep consistent spacing */
+    padding: 15px;
+  }
+}
+
+@media (max-width: 769px) {
+  .login-page-container {
+    max-width: 50%;
+    margin: 20px auto; /* Add vertical margin for spacing */
+    padding: 10px;
+  }
+
+
+  .forgot-password {
+    font-size: 14px;
+  }
+
+  .login-page-container button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 426px) {
+  .login-page-container {
+    width: 100vw;
+    margin: 35px;
+    padding: 10px;
+  }
+
+  .forgot-password {
+    font-size: 12px;
+  }
+
+  .login-page-container button {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 394px) {
+  .login-page-container {
+    max-width: 90%; /* Keep the container width within 90% of the viewport */
+    margin: 20px auto; /* Center horizontally with some vertical spacing */
+    padding: 8px;
+  }
+}
+
+
+@media (max-width: 376px) {
+  .login-page-container {
+    width: 100vw;
+    margin: 50px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 321px) {
+  .login-page-container {
+    width: 300px;
+    margin: 20px;
+    padding: 5px;
+  }
+
+  .login-page-container h2 {
+    font-size: 18px;
+  }
+
+  .login-page-container input {
+    padding: 5px;
+    
+  }
+
+  .forgot-password {
+    font-size: 10px;
+  }
+
+  .login-page-container button {
+    font-size: 10px;
+    padding: 8px;
+  }
+}

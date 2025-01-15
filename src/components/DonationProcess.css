@@ -1,0 +1,732 @@
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+.donation-process {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  height: 100vh; /* Set height for the process container */
+ margin:0px;
+ border:4px solid rgb(65, 4, 4);
+  background-image: url(../assets/donationWorks.jpg);
+ background-size: cover;
+  background-repeat: no-repeat;
+ 
+  background-size:cover;
+background-position: center;
+}
+
+.step {
+  display: grid;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #760606;
+  padding: 20px;
+  margin: 0 10px; /* Add margin to create space around steps */
+  margin-top:200px;
+  height: auto; /* Set height for the steps */
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width:300vw;/* Adjust width as needed */
+
+}
+.step:hover{
+  transform: scale(1.2);
+}
+.arrows {
+  display: flex;
+  align-items: center; /* Center the arrow vertically */
+  justify-content: center; /* Center the arrow horizontally */
+  width: 50px; /* Set width to keep arrows aligned */
+  height: auto; /* Adjust height as needed */
+}
+
+
+.arrows img {
+  width: 70px; /* Adjust width as needed */
+  height: auto; 
+  margin-top:200px;/* Keep aspect ratio */
+}
+
+
+.Icon{
+  display: flex;
+  height:70px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-left: 35%;
+  
+}
+.a{
+  margin:20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 2561px){
+  
+  .donation-process {
+    display: flex;
+    
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 80vh; /* Set height for the process container */
+   margin:0px;
+   border:4px solid rgb(65, 4, 4);
+    background-image: url(../assets/donationWorks.jpg);
+
+   width:100vw;
+    background-repeat: no-repeat;
+   
+    background-size:100vw 80vh;
+  background-position: center;
+  }
+
+
+  .step {
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #760606;
+    padding: 5px;
+    margin: 0 5px; /* Add margin to create space around steps */
+    margin-top:40px;
+    height: 40vh; /* Set height for the steps */
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width:25vw;/* Adjust width as needed */
+  
+  }
+  .step:hover{
+    transform: scale(1.2);
+  }
+  .arrows {
+    display: flex;
+    align-items: center; /* Center the arrow vertically */
+    justify-content: center; /* Center the arrow horizontally */
+    width: 30px; /* Set width to keep arrows aligned */
+    height: auto; /* Adjust height as needed */
+    margin-top: -150px;
+  }
+  
+  
+  .arrows img {
+    width: 70px; /* Adjust width as needed */
+    height: 35px; 
+    margin-top:200px;/* Keep aspect ratio */
+  }
+  
+  
+  .Icon{
+    display: flex;
+    height:120px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+    margin:80px 250px 0px;
+    
+  }
+  .a{
+    margin:0px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .b{
+    font-size: 30px;
+  }}
+
+  
+@media only screen and (max-width: 1921px){
+  
+  .donation-process {
+    display: flex;
+    
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 100vh; /* Set height for the process container */
+   margin:0px;
+   border:4px solid rgb(65, 4, 4);
+    background-image: url(../assets/donationWorks.jpg);
+
+   width:100vw;
+    background-repeat: no-repeat;
+   
+    background-size:100vw 100vh;
+  background-position: center;
+  }
+
+
+  .step {
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #760606;
+    padding: 5px;
+    margin: 0 5px; /* Add margin to create space around steps */
+    margin-top:40px;
+    height: 45vh; /* Set height for the steps */
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width:25vw;/* Adjust width as needed */
+  
+  }
+  .step:hover{
+    transform: scale(1.2);
+  }
+  .arrows {
+    display: flex;
+    align-items: center; /* Center the arrow vertically */
+    justify-content: center; /* Center the arrow horizontally */
+    width: 30px; /* Set width to keep arrows aligned */
+    height: auto; /* Adjust height as needed */
+    margin-top: -150px;
+  }
+  
+  
+  .arrows img {
+    width: 70px; /* Adjust width as needed */
+    height: 35px; 
+    margin-top:200px;/* Keep aspect ratio */
+  }
+  
+  
+  .Icon{
+    display: flex;
+    height:70px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+    margin:40px 120px 0px;
+    
+  }
+  .a{
+    margin:0px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .b{
+    font-size: 18px;
+  }}
+
+
+@media only screen and (max-width: 1441px){
+  
+  .donation-process {
+    display: flex;
+    
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 100vh; /* Set height for the process container */
+   margin:0px;
+   border:4px solid rgb(65, 4, 4);
+    background-image: url(../assets/donationWorks.jpg);
+
+   width:100vw;
+    background-repeat: no-repeat;
+   
+    background-size:100vw 100vh;
+  background-position: center;
+  }
+
+
+  .step {
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #760606;
+    padding: 5px;
+    margin: 0 5px; /* Add margin to create space around steps */
+    margin-top:40px;
+    height: 45vh; /* Set height for the steps */
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width:25vw;/* Adjust width as needed */
+  
+  }
+  .step:hover{
+    transform: scale(1.2);
+  }
+  .arrows {
+    display: flex;
+    align-items: center; /* Center the arrow vertically */
+    justify-content: center; /* Center the arrow horizontally */
+    width: 30px; /* Set width to keep arrows aligned */
+    height: auto; /* Adjust height as needed */
+    margin-top: -150px;
+  }
+  
+  
+  .arrows img {
+    width: 70px; /* Adjust width as needed */
+    height: 35px; 
+    margin-top:200px;/* Keep aspect ratio */
+  }
+  
+  
+  .Icon{
+    display: flex;
+    height:70px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+    margin:40px 120px 0px;
+    
+  }
+  .a{
+    margin:0px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .b{
+    font-size: 18px;
+  }}
+
+
+@media only screen and (max-width: 1025px){
+  
+  .donation-process {
+    display: flex;
+    
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 80vh; /* Set height for the process container */
+   margin:0px;
+   border:4px solid rgb(65, 4, 4);
+    background-image: url(../assets/donationWorks.jpg);
+
+   width:100vw;
+    background-repeat: no-repeat;
+   
+    background-size:100vw 80vh;
+  background-position: center;
+  }
+
+
+  .step {
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #760606;
+    padding: 5px;
+    margin: 0 5px; /* Add margin to create space around steps */
+    margin-top:40px;
+    height: 30vh; /* Set height for the steps */
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width:25vw;/* Adjust width as needed */
+  
+  }
+  .step:hover{
+    transform: scale(1.2);
+  }
+  .arrows {
+    display: flex;
+    align-items: center; /* Center the arrow vertically */
+    justify-content: center; /* Center the arrow horizontally */
+    width: 30px; /* Set width to keep arrows aligned */
+    height: auto; /* Adjust height as needed */
+    margin-top: -150px;
+  }
+  
+  
+  .arrows img {
+    width: 70px; /* Adjust width as needed */
+    height: 35px; 
+    margin-top:200px;/* Keep aspect ratio */
+  }
+  
+  
+  .Icon{
+    display: flex;
+    height:40px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-left: 40%;
+    
+  }
+  .a{
+    margin:10px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .b{
+    font-size: 10px;
+  }}
+
+
+
+
+@media only screen and (max-width: 769px){
+  
+  .donation-process {
+    display: flex;
+    
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 60vh; /* Set height for the process container */
+   margin:0px;
+   border:4px solid rgb(65, 4, 4);
+    background-image: url(../assets/donationWorks.jpg);
+
+   width:100vw;
+    background-repeat: no-repeat;
+   
+    background-size:100vw 60vh;
+  background-position: center;
+  }
+
+
+  .step {
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #760606;
+    padding: 5px;
+    margin: 0 5px; /* Add margin to create space around steps */
+    margin-top:40px;
+    height: 30vh; /* Set height for the steps */
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width:25vw;/* Adjust width as needed */
+  
+  }
+  .step:hover{
+    transform: scale(1.2);
+  }
+  .arrows {
+    display: flex;
+    align-items: center; /* Center the arrow vertically */
+    justify-content: center; /* Center the arrow horizontally */
+    width: 30px; /* Set width to keep arrows aligned */
+    height: auto; /* Adjust height as needed */
+    margin-top: -150px;
+  }
+  
+  
+  .arrows img {
+    width: 70px; /* Adjust width as needed */
+    height: 35px; 
+    margin-top:200px;/* Keep aspect ratio */
+  }
+  
+  
+  .Icon{
+    display: flex;
+    height:30px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-left: 40%;
+    
+  }
+  .a{
+    margin:10px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .b{
+    font-size: 8px;
+  }}
+
+
+@media only screen and (max-width: 426px){
+  
+  .donation-process {
+    display: flex;
+    
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 50vh; /* Set height for the process container */
+   margin:0px;
+   border:4px solid rgb(65, 4, 4);
+    background-image: url(../assets/donationWorks.jpg);
+
+   width:100vw;
+    background-repeat: no-repeat;
+   
+    background-size:100vw 50vh;
+  background-position: center;
+  }
+
+
+  .step {
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #760606;
+    padding: 5px;
+    margin: 0 5px; /* Add margin to create space around steps */
+    margin-top:40px;
+    height: 20vh; /* Set height for the steps */
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width:25vw;/* Adjust width as needed */
+  
+  }
+  .step:hover{
+    transform: scale(1.2);
+  }
+  .arrows {
+    display: flex;
+    align-items: center; /* Center the arrow vertically */
+    justify-content: center; /* Center the arrow horizontally */
+    width: 30px; /* Set width to keep arrows aligned */
+    height: auto; /* Adjust height as needed */
+    margin-top: -150px;
+  }
+  
+  
+  .arrows img {
+    width: 70px; /* Adjust width as needed */
+    height: 35px; 
+    margin-top:200px;/* Keep aspect ratio */
+  }
+  
+  
+  .Icon{
+    display: flex;
+    height:28px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-left: 35%;
+    margin:2px 35px;
+    
+  }
+  .a{
+    margin:10px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .b{
+    font-size: 8px;
+  }}
+
+  @media only screen and (max-width: 400px){
+  
+    .donation-process {
+      display: flex;
+      
+      align-items: center; /* Center vertically */
+      justify-content: center; /* Center horizontally */
+      height: 40vh; /* Set height for the process container */
+     margin:0px;
+     border:4px solid rgb(65, 4, 4);
+      background-image: url(../assets/donationWorks.jpg);
+  
+     width:100vw;
+      background-repeat: no-repeat;
+     
+      background-size:100vw 40vh;
+    background-position: center;
+    }
+  
+  
+    .step {
+      display: grid;
+      background-color: rgba(255, 255, 255, 0.6);
+      border: 1px solid #760606;
+      padding: 5px;
+      margin: 0 3px; /* Add margin to create space around steps */
+      margin-top:40px;
+      height: 15vh; /* Set height for the steps */
+      border-radius: 5px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width:26vw;/* Adjust width as needed */
+    
+    }
+    .step:hover{
+      transform: scale(1.2);
+    }
+    .arrows {
+      display: flex;
+      align-items: center; /* Center the arrow vertically */
+      justify-content: center; /* Center the arrow horizontally */
+      width: 30px; /* Set width to keep arrows aligned */
+      height: auto; /* Adjust height as needed */
+      margin-top: -150px;
+    }
+    
+    
+    .arrows img {
+      width: 40px; /* Adjust width as needed */
+      height: 20px; 
+      margin-top:200px;/* Keep aspect ratio */
+    }
+    
+    
+    .Icon{
+      display: flex;
+      height:28px;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+      margin-left: 35%;
+      margin:2px 35px;
+      
+    }
+    .a{
+      margin:10px;
+      font-size: 8px;
+      font-weight: bold;
+    }
+    .b{
+      font-size: 6px
+    }}
+  
+@media only screen and (max-width: 376px) {
+  
+  .donation-process {
+    display: flex;
+    
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 50vh; /* Set height for the process container */
+   margin:0px;
+   border:4px solid rgb(65, 4, 4);
+    background-image: url(../assets/donationWorks.jpg);
+
+   width:100vw;
+    background-repeat: no-repeat;
+   
+    background-size:100vw 50vh;
+  background-position: center;
+  }
+
+
+  .step {
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #760606;
+    padding: 5px;
+    margin: 0 5px; /* Add margin to create space around steps */
+    margin-top:40px;
+    height: 20vh; /* Set height for the steps */
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width:25vw;/* Adjust width as needed */
+  
+  }
+  .step:hover{
+    transform: scale(1.2);
+  }
+  .arrows {
+    display: flex;
+    align-items: center; /* Center the arrow vertically */
+    justify-content: center; /* Center the arrow horizontally */
+    width: 30px; /* Set width to keep arrows aligned */
+    height: auto; /* Adjust height as needed */
+    margin-top: -150px;
+  }
+  
+  
+  .arrows img {
+    width: 70px; /* Adjust width as needed */
+    height: 35px; 
+    margin-top:200px;/* Keep aspect ratio */
+  }
+  
+  
+  .Icon{
+    display: flex;
+    height:20px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-left: 35%;
+    margin:2px 30px;
+    
+  }
+  .a{
+    margin:10px;
+    font-size: 8px;
+    font-weight: bold;
+  }
+  .b{
+    font-size: 6px;
+  }}
+
+@media only screen and (max-width: 321px) {
+  
+  .donation-process {
+    display: flex;
+    
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 50vh; /* Set height for the process container */
+   margin:0px;
+   border:4px solid rgb(65, 4, 4);
+    background-image: url(../assets/donationWorks.jpg);
+
+   width:100vw;
+    background-repeat: no-repeat;
+   
+    background-size:100vw 50vh;
+  background-position: center;
+  }
+
+
+  .step {
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #760606;
+    padding: 5px;
+    margin: 0 5px; /* Add margin to create space around steps */
+    margin-top:40px;
+    height: 15vh; /* Set height for the steps */
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width:25vw;/* Adjust width as needed */
+  
+  }
+  .step:hover{
+    transform: scale(1.2);
+  }
+  .arrows {
+    display: flex;
+    align-items: center; /* Center the arrow vertically */
+    justify-content: center; /* Center the arrow horizontally */
+    width: 20px; /* Set width to keep arrows aligned */
+    height: auto; /* Adjust height as needed */
+    margin-top: -150px;
+  }
+  
+  
+  .arrows img {
+    width: 30px; /* Adjust width as needed */
+    height: 35px; 
+    margin-top:200px;/* Keep aspect ratio */
+  }
+  
+  
+  .Icon{
+    display: flex;
+    height:20px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-left: 25%;
+    margin: 5px 22px;
+    
+  }
+  .a{
+    margin:10px;
+    font-size: 6px;
+    font-weight: bold;
+  }
+  .b{
+    font-size: 5px;
+  }
+  
+}

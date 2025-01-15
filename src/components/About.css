@@ -1,0 +1,779 @@
+/* .Container{
+   width:50%;
+    margin: 0 auto;
+  
+    background-image: url(/bloodbank/src/assets/AboutBlood.jpg);
+    
+  
+}
+
+.about-box {
+    
+
+    
+   border: 2px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0,0,0.6);
+    overflow: hidden;
+    margin-left: 112.5vh;
+}
+
+.about-container{
+    padding:20px;
+
+}
+
+.section-heading{
+    font-size:2rem;
+    font-weight:bold;
+    color:#333;
+
+}
+
+.about-text{
+    font-size:1rem;
+    line-height:1.6;
+    color:#555;
+    margin-bottom:15px;
+}
+
+.btn{
+    display: inline-flex;
+    align-items: center;
+    background-color: #007bff;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    transition:background-color 0.3s ease;
+
+}
+
+.btn:hover{
+    background-color: #0056b3;
+}
+
+.ms-2{
+    margin-left:8px;
+}
+
+.readBtn img{
+    width:16px;
+    height:1px;
+} */
+
+
+
+
+/* Base styles for all screen sizes */
+.Container {
+    width: 100%;
+    max-width: auto;
+    margin: 0 auto;
+    background-image: url('../../src/assets/AboutBlood.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   height: auto;
+ }
+ 
+ .about-box {
+    border: 2px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    margin: 50px 50%;
+    max-width: 80%;
+ }
+ 
+ .about-container {
+    padding: 20px;
+    padding-top: 15px;
+   
+ }
+ 
+ .heading {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+   
+ }
+ 
+ .about-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    
+ }
+ 
+ .btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+  
+   
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+ }
+ .btnn{
+   display: flex;
+   justify-content: center;
+   margin-top: 5px;
+   font-size: 20px;
+   padding-bottom: -30px;
+   align-items: center;
+  
+ }
+ .btn .readBtn{
+    background-color: #ffeff5;
+ }
+ .btn:hover {
+    background-color: #b40e0e;
+ }
+ 
+ .ms-2 {
+    margin-left: 8px;
+ }
+ 
+ .readBtn img {
+    width: 36px;
+    height: auto;
+    
+ }
+ 
+ @media (max-width: 2561px) {
+   .Container {
+      width: 100vw;
+      background-image: url('../../src/assets/AboutBlood.jpg');/* Smaller image for mobile */
+      background-size: 100vw 100vh; /* Adjust to fit proportionally */
+      margin: 0;
+      height:100vh;
+      border: 2px solid black;
+   }
+
+   .about-box {
+      border: 2px solid black;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      margin: 0px 1284px; /* Adjusted for smaller screens */
+      max-width: 90vw; /* Keeps content within bounds */
+      height: auto; /* Allows the content to expand as needed */
+   }
+
+   .heading {
+      font-size: 78px; /* Larger and readable for mobile */
+      margin: 5px 0;
+      padding: 5px 0;
+      text-align: center; /* Center the heading */
+   }
+
+   .about-text {
+      margin-top: 8px;
+      padding: 0 10px;
+      font-size: 36px; /* Adjust for readability */
+   }
+
+   .btn {
+      height: 100px;
+      width: 60%; /* Full-width buttons */
+      padding: 5px;
+      font-size: 12px; /* Larger font for readability */
+      margin: 50px auto;
+      display: block; /* Center align */
+      text-align: center;
+   }
+
+   .btnn {
+      display: flex;
+      justify-content: center; /* Center buttons horizontally */
+      margin: 0px 0px;
+      font-size: 42px; /* Match button font size */
+   }
+
+   .ms-2 {
+      margin-left: 5px;
+   }
+
+   .readBtn img {
+      width: 40px; /* Larger icons for mobile */
+      height: auto;
+   }
+}
+
+
+@media only screen and (max-width: 1921px) {
+   .Container {
+      width: 100vw;
+      background-image: url('../../src/assets/AboutBlood.jpg');/* Smaller image for mobile */
+      background-size: 100vw 100vh; /* Adjust to fit proportionally */
+      margin: 0;
+      height:100vh;
+      border: 2px solid black;
+   }
+
+   .about-box {
+      border: 2px solid black;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      margin: 0px 760px; /* Adjusted for smaller screens */
+      max-width: 90vw; /* Keeps content within bounds */
+      height: auto; /* Allows the content to expand as needed */
+   }
+
+   .heading {
+      font-size: 44px; /* Larger and readable for mobile */
+      margin: 10px 0;
+      padding: 5px 0;
+      text-align: center; /* Center the heading */
+   }
+
+   .about-text {
+      margin-top: 8px;
+      padding: 0 10px;
+      font-size: 18px; /* Adjust for readability */
+   }
+
+   .btn {
+      height: 60px;
+      width: 50%; /* Full-width buttons */
+      padding: 5px;
+      font-size: 10px; /* Larger font for readability */
+      margin: 12px auto;
+      display: block; /* Center align */
+      text-align: center;
+   }
+
+   .btnn {
+      display: flex;
+      justify-content: center; /* Center buttons horizontally */
+      margin: 0px 0px;
+      font-size: 25px; /* Match button font size */
+   }
+
+   .ms-2 {
+      margin-left: 5px;
+   }
+
+   .readBtn img {
+      width: 36px; /* Larger icons for mobile */
+      height: auto;
+   }
+}
+
+
+
+
+ /* Media Queries for Responsiveness */
+
+ @media only screen and (max-width: 1441px) {
+   .Container {
+      width: 100vw;
+      background-image: url('../../src/assets/AboutBlood.jpg');/* Smaller image for mobile */
+      background-size: 100vw 100vh; /* Adjust to fit proportionally */
+      margin: 0;
+      height:100vh;
+      border: 2px solid black;
+   }
+
+   .about-box {
+      border: 2px solid black;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      margin: 0px 720px; /* Adjusted for smaller screens */
+      max-width: 90vw; /* Keeps content within bounds */
+      height: auto; /* Allows the content to expand as needed */
+   }
+
+   .heading {
+      font-size: 44px; /* Larger and readable for mobile */
+      margin: 10px 0;
+      padding: 5px 0;
+      text-align: center; /* Center the heading */
+   }
+
+   .about-text {
+      margin-top: 8px;
+      padding: 0 10px;
+      font-size: 15px; /* Adjust for readability */
+   }
+
+   .btn {
+      height: 60px;
+      width: 50%; /* Full-width buttons */
+      padding: 5px;
+      font-size: 10px; /* Larger font for readability */
+      margin: 12px auto;
+      display: block; /* Center align */
+      text-align: center;
+   }
+
+   .btnn {
+      display: flex;
+      justify-content: center; /* Center buttons horizontally */
+      margin: 0px 0px;
+      font-size: 25px; /* Match button font size */
+   }
+
+   .ms-2 {
+      margin-left: 5px;
+   }
+
+   .readBtn img {
+      width: 36px; /* Larger icons for mobile */
+      height: auto;
+   }
+}
+
+
+
+/* For screens less than 1024px (tablets) */
+@media  only screen and (max-width: 1367px) {
+   .Container {
+      width: 100vw;
+      background-image: url('../../src/assets/AboutBlood.jpg');/* Smaller image for mobile */
+      background-size: 100vw 100vh; /* Adjust to fit proportionally */
+      margin: 0;
+      height:100vh;
+      border: 2px solid black;
+   }
+
+   .about-box {
+      border: 2px solid black;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      margin: 0px 700px; /* Adjusted for smaller screens */
+      max-width: 90vw; /* Keeps content within bounds */
+      height: auto; /* Allows the content to expand as needed */
+   }
+
+   .heading {
+      font-size: 18px; /* Larger and readable for mobile */
+      margin: 5px 0;
+      padding: 5px 0;
+      text-align: center; /* Center the heading */
+   }
+
+   .about-text {
+      margin-top: 8px;
+      padding: 0 10px;
+      font-size: 15px; /* Adjust for readability */
+   }
+
+   .btn {
+      height: 40px;
+      width: 60%; /* Full-width buttons */
+      padding: 5px;
+      font-size: 12px; /* Larger font for readability */
+      margin: 12px auto;
+      display: block; /* Center align */
+      text-align: center;
+   }
+
+   .btnn {
+      display: flex;
+      justify-content: center; /* Center buttons horizontally */
+      margin: 0px 0px;
+      font-size: 12px; /* Match button font size */
+   }
+
+   .ms-2 {
+      margin-left: 5px;
+   }
+
+   .readBtn img {
+      width: 20px; /* Larger icons for mobile */
+      height: auto;
+   }
+}
+
+
+
+
+/* For screens less than 1024px (tablets) */
+@media  only screen and (max-width: 1025px) {
+   .Container {
+      width: 100vw;
+      background-image: url('../../src/assets/AboutBlood.jpg');/* Smaller image for mobile */
+      background-size: 100vw 100vh; /* Adjust to fit proportionally */
+      margin: 0;
+      height:100vh;
+      border: 2px solid black;
+   }
+
+   .about-box {
+      border: 2px solid black;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      margin: 0px 513px; /* Adjusted for smaller screens */
+      max-width: 90vw; /* Keeps content within bounds */
+      height: auto; /* Allows the content to expand as needed */
+   }
+
+   .heading {
+      font-size: 18px; /* Larger and readable for mobile */
+      margin: 5px 0;
+      padding: 5px 0;
+      text-align: center; /* Center the heading */
+   }
+
+   .about-text {
+      margin-top: 8px;
+      padding: 0 10px;
+      font-size: 14px; /* Adjust for readability */
+   }
+
+   .btn {
+      height: 40px;
+      width: 60%; /* Full-width buttons */
+      padding: 5px;
+      font-size: 12px; /* Larger font for readability */
+      margin: 12px auto;
+      display: block; /* Center align */
+      text-align: center;
+   }
+
+   .btnn {
+      display: flex;
+      justify-content: center; /* Center buttons horizontally */
+      margin: 0px 0px;
+      font-size: 12px; /* Match button font size */
+   }
+
+   .ms-2 {
+      margin-left: 5px;
+   }
+
+   .readBtn img {
+      width: 20px; /* Larger icons for mobile */
+      height: auto;
+   }
+}
+
+
+/* For screens less than 768px (mobile) */
+@media only screen and (max-width: 769px) {
+   .Container {
+      width: 100vw;
+      background-image: url('../../src/assets/AboutBlood.jpg');/* Smaller image for mobile */
+      background-size: 100vw 100vh; /* Adjust to fit proportionally */
+      margin: 0;
+      height:100vh;
+      border: 2px solid black;
+   }
+
+   .about-box {
+      border: 2px solid black;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      margin: 0px 382px; /* Adjusted for smaller screens */
+      max-width: 90vw; /* Keeps content within bounds */
+      height: auto; /* Allows the content to expand as needed */
+   }
+
+   .heading {
+      font-size: 16px; /* Larger and readable for mobile */
+      margin: 5px 0;
+      padding: 5px 0;
+      text-align: center; /* Center the heading */
+   }
+
+   .about-text {
+      margin-top: 8px;
+      padding: 0 10px;
+      font-size: 12px; /* Adjust for readability */
+   }
+
+   .btn {
+      height: 40px;
+      width: 60%; /* Full-width buttons */
+      padding: 5px;
+      font-size: 12px; /* Larger font for readability */
+      margin: 12px auto;
+      display: block; /* Center align */
+      text-align: center;
+   }
+
+   .btnn {
+      display: flex;
+      justify-content: center; /* Center buttons horizontally */
+      margin: 0px 0px;
+      font-size: 12px; /* Match button font size */
+   }
+
+   .ms-2 {
+      margin-left: 5px;
+   }
+
+   .readBtn img {
+      width: 20px; /* Larger icons for mobile */
+      height: auto;
+   }
+}
+
+
+/* For small mobile devices */
+@media only screen and (max-width: 426px)  {
+   .Container {
+      width: 100vw;
+      background-image: url('../../src/assets/AboutBlood.jpg'); /* Smallest image */ 
+      background-size: 100vw 50vh;
+     
+      margin: 0;
+      height: 50vh;
+      border:2px solid black;
+   }
+
+   .about-box {
+      border: 2px solid black;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      margin: 0px 213px;
+      max-width: 100vw;
+      height: 100vh;
+   }
+
+   .heading {
+      margin-top: 2px;
+      font-size: 10px;
+      margin: 0px;
+      padding: 0px;
+     padding-bottom: 0px;
+   }
+   .about-text {
+      margin-top:-12px;
+      padding-top: 0px;
+      font-size: 5.6px;;
+   }
+
+   .btn{
+     
+      height: 4vh;
+      width: 20vw;
+      padding: 0px;
+      font-size: 6px;
+      margin: 10px;
+   }
+  .btnn{
+   display: flex;
+   margin-left: 2px;
+   padding-left: 2px;
+   margin-top: 0px;
+   font-size: 6.5px;
+  }
+  .ms-2 {
+   margin-left: 5px;
+}
+.readBtn img {
+   width: 12px;
+   height: auto;
+   
+}
+}
+
+
+
+/* For small mobile devices */
+@media only screen and (max-width: 400px)  {
+   .Container {
+      width: 100vw;
+      background-image: url('../../src/assets/AboutBlood.jpg'); /* Smallest image */ 
+      background-size: 100vw 40vh;
+     
+      margin: 0;
+      height: 40vh;
+      border:2px solid black;
+   }
+
+   .about-box {
+      border: 2px solid black;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      margin: 0px 200px;
+      max-width: 100vw;
+      height: 100vh;
+   }
+
+   .heading {
+      margin-top: 2px;
+      font-size: 10px;
+      margin: 0px;
+      padding: 0px;
+     padding-bottom: 0px;
+   }
+   .about-text {
+      margin-top:-12px;
+      padding-top: 0px;
+      font-size: 5.2px;;
+   }
+
+   .btn{
+     
+      height: 3vh;
+      width: 23vw;
+      padding: 0px;
+      font-size: 6px;
+      margin: 10px;
+   }
+  .btnn{
+   display: flex;
+   margin-left: 2px;
+   padding-left: 2px;
+   margin-top: 0px;
+   font-size: 8px;
+  }
+  .ms-2 {
+   margin-left: 5px;
+}
+.readBtn img {
+   width: 12px;
+   height: auto;
+   
+}
+}
+
+
+@media only screen and (max-width: 376px) {
+   .Container {
+      width: 100vw;
+      background-image: url('../../src/assets/AboutBlood.jpg'); /* Smallest image */ 
+      background-size: 100vw 50vh;
+     
+      margin: 0;
+      height: 50vh;
+      border:2px solid black;
+   }
+
+   .about-box {
+      border: 2px solid black;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      margin: 0px 188px;
+      max-width: 80%;
+      height: 50vh;
+   }
+
+   .heading {
+      font-size: 14px;
+   }
+   .about-text {
+      font-size: 5px;;
+   }
+   .btn {
+      display: inline-flex;
+      align-items: center;
+      background-color: #007bff;
+      color: white;
+      padding: 5px 5px;
+      width: 80px;
+      height: 30px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin:10px 6px ; 
+   }
+   .btn .readBtn{
+      background-color: #ffeff5;
+
+   }
+   .btn:hover {
+      background-color: #b40e0e;
+   }
+   
+   .ms-2 {
+      margin-left: 8px;
+   }
+   
+   .readBtn img {
+      width: 16px;
+      height: auto;
+      
+   }
+   .btnn{
+      display: flex;
+      width: 100px;
+      margin-left: -20px;
+      padding-left: 2px;
+      margin-top: 0px;
+      font-size: 8px;
+     }
+  
+}
+
+
+@media only screen and (max-width: 321px) {
+   .Container {
+      background-image: url('../../src/assets/AboutBlood.jpg'); /* Smallest image */ 
+      background-size: 100vw 50vh;
+      width: 100vw;
+      margin: 0;
+      height: 50vh;
+      border:2px solid black;
+   }
+
+   .about-box {
+      border: 2px solid black;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      margin: 0px 160px;
+      max-width: 80%;
+      height: 50vh;
+   }
+
+   .heading {
+      font-size: 14px;
+   }
+   .about-text {
+      font-size: 4.2px;;
+   }
+
+   .btn {
+      display: inline-flex;
+      align-items: center;
+      background-color: #007bff;
+      color: white;
+      padding: 2px 2px;
+      width: 80px;
+      height: 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 10px 10px;
+   }
+   .btn .readBtn{
+      background-color: #ffeff5;
+   }
+   .btn:hover {
+      background-color: #b40e0e;
+   }
+   
+   .ms-2 {
+      margin-left: 3px;
+   }
+   
+   .readBtn img {
+      width: 13px;
+      margin-top:0px;
+      height: auto;
+      
+      
+   }
+
+   .btnn{
+      display: flex;
+      width: 100px;
+      margin-left: -20px;
+      padding-left: 2px;
+      margin-top: -4px;
+      font-size: 8px;
+     }
+  
+}

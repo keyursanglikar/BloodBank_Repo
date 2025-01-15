@@ -1,0 +1,78 @@
+1. Use Node.js in legacy mode:
+You can run your project with an environment variable that enables legacy OpenSSL support. Try running this command:
+
+export NODE_OPTIONS=--openssl-legacy-provider
+
+
+
+
+2.If you're on Windows, use:
+set NODE_OPTIONS=--openssl-legacy-provider
+
+
+Error handling:-------------------------------
+
+Check package.json for React-specific scripts: In a React project, the start script should look like this:
+
+json
+Copy code
+{
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
+}
+
+
+Ensure you have these scripts in your package.json. If they are missing, you might need to install react-scripts:
+
+npm install react-scripts --save
+
+
+
+Ensure that your project has the proper structure: A React project usually has an src directory with the main entry point (typically index.js or App.js). Ensure that you are in the root directory of your React project and not trying to start the app from the wrong folder.
+
+Install dependencies: If you haven't installed all the required dependencies yet, run:
+
+cmd- prompt type
+npm install
+
+
+npm start
+
+
+
+......................................................................................................................
+
+To make the setting permanent for your project by using a .env file, follow these steps:
+
+Steps to Add a .env File:
+Navigate to Your Project Root:
+
+Go to the root directory of your project where package.json is located.
+Create a .env File:
+
+In the project root, create a new file named .env (without any file extension).
+Add the Environment Variable:
+
+Open the .env file in any text editor and add the following line:
+css
+Copy code
+NODE_OPTIONS=--openssl-legacy-provider
+Save the .env File:
+
+Save the file and close the editor.
+This will make sure that every time you run your project, it will automatically apply the --openssl-legacy-provider flag, fixing the OpenSSL issue permanently.
+
+Now, you can start your app again:
+
+bash
+Copy code
+
+npm install react-scripts --save
+npm start
+Let me know if everything works after adding the .env file!
+
+use node js 16version

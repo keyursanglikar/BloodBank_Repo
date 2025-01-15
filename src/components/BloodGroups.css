@@ -1,0 +1,424 @@
+/* Container for the blood group selector */
+.blood-bank-container {
+    padding: 20px;
+    border: 5px solid #911414;
+    width: 100vw; /* Full width */
+    margin: 0px 0px;
+    border-radius: 4px;
+    background: linear-gradient(2deg, #ffffff, #ef9797, rgb(193, 24, 24)); 
+}
+
+.blood-bank-header {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f9f6f6;
+}
+
+.blood-group-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Individual button styles */
+.blood-group-button {
+    position: relative; /* Required for the pseudo-element */
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 1px solid #352d2d;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for transform */
+}
+
+.blood-group-button::before {
+    content: ""; /* Empty content for the pseudo-element */
+    position: absolute; /* Positioning */
+    bottom: 0; /* Start from the bottom */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width of the button */
+    height: 0; /* Start with no height */
+    background-color: rgba(255, 0, 0, 0.7); /* Water color */
+    transition: height 0.4s ease; /* Smooth transition for the height */
+    z-index: 0; /* Send it behind the text */
+}
+
+.blood-group-button:hover::before {
+    height: 60%; /* Fill the button on hover */
+}
+
+.blood-group-button:hover {
+    color: rgb(0, 0, 0); /* Keep text color white */
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly change background color on hover */
+    transform: scale(1.3); /* Adjusted scale for a subtle effect */
+    z-index: 1; /* Scale the button slightly on hover */
+}
+
+/* Selected blood group and compatible groups */
+.blood-group-selected {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.blood-group-selected h4 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.compatible-groups-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.compatible-group {
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border: 1px solid #4d0303;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #000000;
+}
+
+/* Donation Container */
+.donation-container {
+    display: flex; /* Use flexbox for left and right sections */
+    justify-content: space-between; /* Space between info and image */
+    align-items: flex-start; /* Align items at the start */
+    margin-top: 20px; /* Space above the donation container */
+  
+}
+
+.donation-info {
+    flex: 1; /* Allow donation info to take remaining space */
+    margin-right: 20px; /* Space between text and image */
+}
+
+.donation-group {
+    margin-bottom: 20px; /* Space between groups */
+    color: #490606;
+   
+    font-weight: 3px;
+    font:bold;
+    
+   
+}
+
+/* Image Styling */
+.blood-image {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    border: 2px solid black; /* Add a border to the image */
+}
+
+.blood-image img {
+    width: 200px; /* Adjust size as necessary */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+@media only screen and (max-width: 425px) {
+    .blood-group-buttons {
+        display: flex;
+        flex-wrap: nowrap; /* Keep buttons in one row */
+        gap: 5px; /* Reduce gap for smaller screens */
+        width: 90vw; /* Full width */
+        justify-content: center;
+        overflow-x: auto; /* Allow horizontal scrolling */
+    }
+
+    .blood-group-button {
+        position: relative;
+        padding: 5px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        background-color: #ffffff;
+        border: 1px solid #352d2d;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 60px; /* Adjust width */
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .blood-group-button::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: rgba(255, 0, 0, 0.7);
+        transition: height 0.4s ease;
+        z-index: 0;
+    }
+
+    .blood-group-button:hover::before {
+        height: 60%; /* Fill the button on hover */
+    }
+
+    .blood-group-button:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgba(255, 255, 255, 0.8);
+        transform: scale(1.1); /* Slightly reduce the scale for smaller screens */
+        z-index: 1;
+    }
+
+    .blood-group-selected {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .blood-group-selected h4 {
+        color: #ffffff;
+        margin-bottom: 10px;
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .compatible-groups-container {
+        display: flex;
+        justify-content: center;
+        gap: 5px; /* Reduce gap */
+        color: white;
+        flex-wrap: wrap;
+    }
+
+    .compatible-group {
+        padding: 5px 8px; /* Adjust padding */
+        background-color: #ffffff;
+        border: 1px solid #4d0303;
+        border-radius: 5px;
+        font-size: 12px; /* Reduce font size */
+        color: #000000;
+    }
+
+    .donation-container {
+        display: flex;
+        flex-direction: column; /* Stack content vertically for small screens */
+        align-items: center; /* Center-align items */
+        margin-top: 20px;
+    }
+
+    .donation-info {
+        width: 100%; /* Full width */
+        text-align: center; /* Center text */
+        margin-bottom: 20px; /* Space below donation info */
+    }
+
+    .donation-group {
+        margin-bottom: 10px; /* Reduce space between groups */
+        color: #490606;
+        font-weight: bold;
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .blood-image {
+        flex-shrink: 0;
+        border: 2px solid black;
+        width: 100%; /* Make image container full width */
+        text-align: center;
+    }
+
+    .blood-image img {
+        width: 150px; /* Adjust image size for small screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+
+
+@media only screen and  (max-width:375px) {
+    .blood-group-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px; /* Smaller gap for tighter spacing */
+        justify-content: center;
+       
+    }
+
+    .blood-group-button {
+        position: relative;
+        padding: 6px 10px; /* Reduced padding for smaller button size */
+        font-size: 12px; /* Smaller font size */
+        background-color: #ffffff;
+        border: 1px solid #352d2d;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        max-width: 50px; /* Fixed width for better alignment */
+        text-align: center; /* Center text inside the button */
+    }
+
+    .blood-group-button::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: rgba(255, 0, 0, 0.7);
+        transition: height 0.4s ease;
+        z-index: 0;
+    }
+
+   
+   
+   
+    .blood-bank-container {
+  
+      width:100%;
+         /* More space on smaller screens */
+    }
+
+    .blood-bank-header {
+        font-size: 24px; /* Slightly smaller header */
+    }
+
+    .blood-group-button {
+        flex: 1 1 45%; /* Responsive buttons that adjust to screen width */
+    }
+
+    .donation-container {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+
+    .donation-info {
+        margin-right: 0; /* Reset margin on small screens */
+        margin-bottom: 20px; /* Space below info for the image */
+    }
+
+    .blood-image{
+        height: 90%;
+    }
+
+    .blood-image img {
+        width: 100%; /* Make image responsive */
+        height:100%;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+   
+    .blood-bank-container {
+        padding: 20px;
+        border: 5px solid #911414;
+        width: 100vw; /* Full width */
+        margin: 0px 0px;
+        border-radius: 4px;
+        background: linear-gradient(2deg, #ffffff, #ef9797, rgb(193, 24, 24)); 
+    }
+    
+    .blood-group-buttons {
+        display: flex;
+        flex-wrap: nowrap; /* Keep buttons in one row */
+        gap: 5px; /* Reduce gap for smaller screens */
+        width: 85vw; /* Full width */
+        justify-content: center;
+        overflow-x: auto; /* Allow horizontal scrolling */
+    }
+
+    .blood-group-button {
+        position: relative;
+        padding: 5px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        background-color: #ffffff;
+        border: 1px solid #352d2d;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 60px; /* Adjust width */
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .blood-group-button::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: rgba(255, 0, 0, 0.7);
+        transition: height 0.4s ease;
+        z-index: 0;
+    }
+
+    .blood-group-button:hover::before {
+        height: 60%; /* Fill the button on hover */
+    }
+
+    .blood-group-button:hover {
+        color: rgb(0, 0, 0);
+        background-color: rgba(255, 255, 255, 0.8);
+        transform: scale(1.1); /* Slightly reduce the scale for smaller screens */
+        z-index: 1;
+    }
+
+    .blood-group-selected {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .blood-group-selected h4 {
+        color: #ffffff;
+        margin-bottom: 10px;
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .compatible-groups-container {
+        display: flex;
+        justify-content: center;
+        gap: 5px; /* Reduce gap */
+        color: white;
+        flex-wrap: wrap;
+    }
+
+    .compatible-group {
+        padding: 5px 8px; /* Adjust padding */
+        background-color: #ffffff;
+        border: 1px solid #4d0303;
+        border-radius: 5px;
+        font-size: 12px; /* Reduce font size */
+        color: #000000;
+    }
+
+    .donation-container {
+        display: flex;
+        flex-direction: column; /* Stack content vertically for small screens */
+        align-items: center; /* Center-align items */
+        margin-top: 20px;
+    }
+
+    .donation-info {
+        width: 100%; /* Full width */
+        text-align: center; /* Center text */
+        margin-bottom: 20px; /* Space below donation info */
+    }
+
+    .donation-group {
+        margin-bottom: 10px; /* Reduce space between groups */
+        color: #490606;
+        font-weight: bold;
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .blood-image {
+        flex-shrink: 0;
+        border: 2px solid black;
+        width: 100%; /* Make image container full width */
+        text-align: center;
+    }
+
+    .blood-image img {
+        width: 150px; /* Adjust image size for small screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}

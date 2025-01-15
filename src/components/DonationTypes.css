@@ -1,0 +1,1007 @@
+/* DonationTypes.css */
+.DonationTypecontainer  {
+    width: 100vw; /* Use full width of the screen */
+    max-width: 100vw;
+ /* Remove the 200px restriction */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Add horizontal padding */
+  
+}
+
+.section-heading {
+    font-size: 2rem; /* Adjust heading size */
+    color: #2c3e50; /* Dark color for the heading */
+}
+
+.sectionTxt {
+    font-size: 1.1rem; /* Adjust text size */
+    color: #000000; /* Slightly lighter color */
+}
+
+.tabs {
+    background-color: #f7f9fc; /* Light background for the tabs */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Subtle shadow */
+}
+
+.nav-link {
+    margin-top: 10px;
+    color: #3498db; /* Color for tab links */
+    font-weight: 500; /* Semi-bold text */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    text-align: center; /* Center-align links for all screen sizes */
+}
+
+.nav-link:hover {
+    background-color: #ecf0f1; /* Change background on hover */
+}
+
+.nav-link.active {
+    background-color: #1688d3; /* Active tab color */
+    color: white; /* White text for active tab */
+}
+
+.tabContent {
+    background-color: #fff; /* White background for the content area */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+    margin-top: 20px; /* Space above the content */
+    padding: 15px; /* Add padding to the content */
+
+}
+
+.ques {
+    font-weight: bold; /* Bold questions */
+    color: #2c3e50; /* Dark color for questions */
+}
+
+.ans {
+    color: #7f8c8d; /* Gray color for answers */
+    margin-bottom: 1rem; /* Space below answers */
+}
+
+.img {
+    margin-top: 20px; /* Space above the image */
+    text-align: center; /* Center the image */
+}
+
+.img-fluid {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.btn.searchBtn {
+    background-color: #ee0859; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* No border */
+    border-radius: 7px; /* Rounded corners */
+    font-size: 1rem; /* Button text size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+    margin-bottom: 30px;
+    width: 50%; /* Full-width button */
+}
+
+.btn.searchBtn:hover {
+    background-color: #ff0000; /* Change button background on hover */
+    color: white; /* White text on hover */
+}
+
+
+@media only screen and (max-width:1441px) {
+
+    .DonationTypecontainer {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        width: 100vw; /* Full viewport width */
+        margin: 0; /* Remove margins */
+        padding: 0 10px; /* Add small padding */
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+
+    .section-heading {
+        display: flex;
+        justify-content: center; /* Center align heading */
+        font-size: 18px; /* Increase font size for readability */
+        color: #2c3e50; /* Darker color for emphasis */
+        margin-bottom: 10px; /* Add spacing below heading */
+    }
+
+    .sectionTxt {
+        font-size: 12px; /* Slightly larger text for readability */
+        color: #333; /* Softer black for better contrast */
+        text-align: justify; /* Justify text for neatness */
+        margin-bottom: 15px; /* Add spacing below text */
+    }
+
+    .tabs {
+        background-color: #f7f9fc; /* Light background */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        width: 90vw; /* Slightly smaller width for better fit */
+        margin-bottom: 15px; /* Add spacing below tabs */
+        padding: 10px; /* Add padding inside tabs */
+        margin-left: 10px;
+    }
+
+    .nav-link {
+        margin-top: 8px; /* Reduce spacing for compact design */
+        padding: 8px; /* Adjust padding for smaller links */
+        font-size: 14px; /* Increase font size for readability */
+        text-align: center;
+        color: #3498db; /* Primary blue color */
+        border-radius: 4px; /* Add slight rounding for links */
+        transition: background-color 0.3s; /* Smooth hover transition */
+    }
+
+    .nav-link:hover {
+        background-color: #ecf0f1; /* Light gray background on hover */
+    }
+
+    .nav-link.active {
+        background-color: #1688d3; /* Highlight active tab */
+        color: white;
+    }
+
+    .tabContent {
+        background-color: #fff; /* White background */
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow */
+        margin-top: 20px; /* Add spacing above content */
+        padding: 12px; /* Slightly larger padding */
+        font-size: 14px; /* Increase font size for clarity */
+        width: 90vw; /* Adjust content width */
+        margin-left: 10px;
+        display: flex;
+    }
+
+    .ques {
+        font-weight: bold; /* Make questions stand out */
+        color: #2c3e50;
+        margin-bottom: 8px;
+    }
+
+    .ans {
+        color: #7f8c8d; /* Lighter gray */
+        font-size: 12px; /* Adjust answer text size */
+        margin-bottom: 12px;
+        display: flex;
+
+    }
+
+    .img {
+      
+      display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-left: 500px;
+        
+        width: 20vw; /* Adjust image width */
+    }
+
+    .img-fluid {
+        width: 100vw; /* Limit image size for responsiveness */
+        height: auto;
+    }
+
+    .btn.searchBtn {
+        background-color: #ee0859;
+        color: white;
+        padding: 12px 15px; /* Adjust padding */
+        border: none;
+        border-radius: 7px;
+        font-size: 14px; /* Slightly larger text size */
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin: 20px 0; /* Space around the button */
+        width: 80vw; /* Full width with some margin */
+        height: auto;
+        text-align: center;
+    }
+
+    .btn.searchBtn:hover {
+        background-color: #ff0000;
+        color: white;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width:1369px) {
+
+    .DonationTypecontainer {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        width: 100vw; /* Full viewport width */
+        margin: 0; /* Remove margins */
+        padding: 0 10px; /* Add small padding */
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+
+    .section-heading {
+        display: flex;
+        justify-content: center; /* Center align heading */
+        font-size: 18px; /* Increase font size for readability */
+        color: #2c3e50; /* Darker color for emphasis */
+        margin-bottom: 10px; /* Add spacing below heading */
+    }
+
+    .sectionTxt {
+        font-size: 12px; /* Slightly larger text for readability */
+        color: #333; /* Softer black for better contrast */
+        text-align: justify; /* Justify text for neatness */
+        margin-bottom: 15px; /* Add spacing below text */
+    }
+
+    .tabs {
+        background-color: #f7f9fc; /* Light background */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        width: 95vw; /* Slightly smaller width for better fit */
+        margin-bottom: 15px; /* Add spacing below tabs */
+        padding: 10px; /* Add padding inside tabs */
+        margin-left: 10px;
+    }
+
+    .nav-link {
+        margin-top: 8px; /* Reduce spacing for compact design */
+        padding: 8px; /* Adjust padding for smaller links */
+        font-size: 14px; /* Increase font size for readability */
+        text-align: center;
+        color: #3498db; /* Primary blue color */
+        border-radius: 4px; /* Add slight rounding for links */
+        transition: background-color 0.3s; /* Smooth hover transition */
+    }
+
+    .nav-link:hover {
+        background-color: #ecf0f1; /* Light gray background on hover */
+    }
+
+    .nav-link.active {
+        background-color: #1688d3; /* Highlight active tab */
+        color: white;
+    }
+
+    .tabContent {
+        background-color: #fff; /* White background */
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow */
+        margin-top: 20px; /* Add spacing above content */
+        padding: 12px; /* Slightly larger padding */
+        font-size: 14px; /* Increase font size for clarity */
+        width: 95vw; /* Adjust content width */
+        margin-left: 10px;
+        display: flex;
+    }
+
+    .ques {
+        font-weight: bold; /* Make questions stand out */
+        color: #2c3e50;
+        margin-bottom: 8px;
+    }
+
+    .ans {
+        color: #7f8c8d; /* Lighter gray */
+        font-size: 12px; /* Adjust answer text size */
+        margin-bottom: 12px;
+        display: flex;
+
+    }
+
+    .img {
+      
+      display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-left: 500px;
+        
+        width: 20vw; /* Adjust image width */
+    }
+
+    .img-fluid {
+        width: 100vw; /* Limit image size for responsiveness */
+        height: auto;
+    }
+
+    .btn.searchBtn {
+        background-color: #ee0859;
+        color: white;
+        padding: 12px 15px; /* Adjust padding */
+        border: none;
+        border-radius: 7px;
+        font-size: 14px; /* Slightly larger text size */
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin: 20px 0; /* Space around the button */
+        width: 80vw; /* Full width with some margin */
+        height: auto;
+        text-align: center;
+    }
+
+    .btn.searchBtn:hover {
+        background-color: #ff0000;
+        color: white;
+    }
+}
+
+
+@media only screen and (max-width:1025px) {
+
+    .DonationTypecontainer {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        width: 100vw; /* Full viewport width */
+        margin: 0; /* Remove margins */
+        padding: 0 10px; /* Add small padding */
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+
+    .section-heading {
+        display: flex;
+        justify-content: center; /* Center align heading */
+        font-size: 18px; /* Increase font size for readability */
+        color: #2c3e50; /* Darker color for emphasis */
+        margin-bottom: 10px; /* Add spacing below heading */
+    }
+
+    .sectionTxt {
+        font-size: 12px; /* Slightly larger text for readability */
+        color: #333; /* Softer black for better contrast */
+        text-align: justify; /* Justify text for neatness */
+        margin-bottom: 15px; /* Add spacing below text */
+    }
+
+    .tabs {
+        background-color: #f7f9fc; /* Light background */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        width: 90vw; /* Slightly smaller width for better fit */
+        margin-bottom: 15px; /* Add spacing below tabs */
+        padding: 10px; /* Add padding inside tabs */
+        margin-left: 10px;
+    }
+
+    .nav-link {
+        margin-top: 8px; /* Reduce spacing for compact design */
+        padding: 8px; /* Adjust padding for smaller links */
+        font-size: 14px; /* Increase font size for readability */
+        text-align: center;
+        color: #3498db; /* Primary blue color */
+        border-radius: 4px; /* Add slight rounding for links */
+        transition: background-color 0.3s; /* Smooth hover transition */
+    }
+
+    .nav-link:hover {
+        background-color: #ecf0f1; /* Light gray background on hover */
+    }
+
+    .nav-link.active {
+        background-color: #1688d3; /* Highlight active tab */
+        color: white;
+    }
+
+    .tabContent {
+        background-color: #fff; /* White background */
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow */
+        margin-top: 20px; /* Add spacing above content */
+        padding: 12px; /* Slightly larger padding */
+        font-size: 14px; /* Increase font size for clarity */
+        width: 90vw; /* Adjust content width */
+        margin-left: 10px;
+    }
+
+    .ques {
+        font-weight: bold; /* Make questions stand out */
+        color: #2c3e50;
+        margin-bottom: 8px;
+    }
+
+    .ans {
+        color: #7f8c8d; /* Lighter gray */
+        font-size: 12px; /* Adjust answer text size */
+        margin-bottom: 12px;
+    }
+
+    .img {
+        margin-top: 10px;
+        margin-left:20px;
+        text-align: center;
+        width: 20vw; /* Adjust image width */
+    }
+
+    .img-fluid {
+        width: 100vw; /* Limit image size for responsiveness */
+        height: auto;
+    }
+
+    .btn.searchBtn {
+        background-color: #ee0859;
+        color: white;
+        padding: 12px 15px; /* Adjust padding */
+        border: none;
+        border-radius: 7px;
+        font-size: 14px; /* Slightly larger text size */
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin: 20px 0; /* Space around the button */
+        width: 80vw; /* Full width with some margin */
+        height: auto;
+        text-align: center;
+    }
+
+    .btn.searchBtn:hover {
+        background-color: #ff0000;
+        color: white;
+    }
+}
+
+
+@media only screen and (max-width:769px) {
+
+    .DonationTypecontainer {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        width: 100vw; /* Full viewport width */
+        margin: 0; /* Remove margins */
+        padding: 0 10px; /* Add small padding */
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+
+    .section-heading {
+        display: flex;
+        justify-content: center; /* Center align heading */
+        font-size: 18px; /* Increase font size for readability */
+        color: #2c3e50; /* Darker color for emphasis */
+        margin-bottom: 10px; /* Add spacing below heading */
+    }
+
+    .sectionTxt {
+        font-size: 12px; /* Slightly larger text for readability */
+        color: #333; /* Softer black for better contrast */
+        text-align: justify; /* Justify text for neatness */
+        margin-bottom: 15px; /* Add spacing below text */
+    }
+
+    .tabs {
+        background-color: #f7f9fc; /* Light background */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        width: 90vw; /* Slightly smaller width for better fit */
+        margin-bottom: 15px; /* Add spacing below tabs */
+        padding: 10px; /* Add padding inside tabs */
+        margin-left: 10px;
+    }
+
+    .nav-link {
+        margin-top: 8px; /* Reduce spacing for compact design */
+        padding: 8px; /* Adjust padding for smaller links */
+        font-size: 14px; /* Increase font size for readability */
+        text-align: center;
+        color: #3498db; /* Primary blue color */
+        border-radius: 4px; /* Add slight rounding for links */
+        transition: background-color 0.3s; /* Smooth hover transition */
+    }
+
+    .nav-link:hover {
+        background-color: #ecf0f1; /* Light gray background on hover */
+    }
+
+    .nav-link.active {
+        background-color: #1688d3; /* Highlight active tab */
+        color: white;
+    }
+
+    .tabContent {
+        background-color: #fff; /* White background */
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow */
+        margin-top: 20px; /* Add spacing above content */
+        padding: 12px; /* Slightly larger padding */
+        font-size: 14px; /* Increase font size for clarity */
+        width: 90vw; /* Adjust content width */
+        margin-left: 10px;
+    }
+
+    .ques {
+        font-weight: bold; /* Make questions stand out */
+        color: #2c3e50;
+        margin-bottom: 8px;
+    }
+
+    .ans {
+        color: #7f8c8d; /* Lighter gray */
+        font-size: 12px; /* Adjust answer text size */
+        margin-bottom: 12px;
+    }
+
+    .img {
+        display: flex;
+   align-content: center;
+        margin-top: 10px;
+        text-align: center;
+        margin-left: 150px;
+        width: 50vw; /* Adjust image width */
+    }
+
+    .img-fluid {
+        width: 50vw; /* Limit image size for responsiveness */
+        height: auto;
+    }
+
+    .btn.searchBtn {
+        background-color: #ee0859;
+        color: white;
+        padding: 12px 15px; /* Adjust padding */
+        border: none;
+        border-radius: 7px;
+        font-size: 14px; /* Slightly larger text size */
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin: 20px 0; /* Space around the button */
+        width: 80vw; /* Full width with some margin */
+        height: auto;
+        text-align: center;
+    }
+
+    .btn.searchBtn:hover {
+        background-color: #ff0000;
+        color: white;
+    }
+}
+
+
+
+
+@media only screen and (max-width:426px) {
+
+    .DonationTypecontainer {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        width: 100vw; /* Full viewport width */
+        margin: 0; /* Remove margins */
+        padding: 0 10px; /* Add small padding */
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+
+    .section-heading {
+        display: flex;
+        justify-content: center; /* Center align heading */
+        font-size: 18px; /* Increase font size for readability */
+        color: #2c3e50; /* Darker color for emphasis */
+        margin-bottom: 10px; /* Add spacing below heading */
+    }
+
+    .sectionTxt {
+        font-size: 12px; /* Slightly larger text for readability */
+        color: #333; /* Softer black for better contrast */
+        text-align: justify; /* Justify text for neatness */
+        margin-bottom: 15px; /* Add spacing below text */
+    }
+
+    .tabs {
+        background-color: #f7f9fc; /* Light background */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        width: 90vw; /* Slightly smaller width for better fit */
+        margin-bottom: 15px; /* Add spacing below tabs */
+        padding: 10px; /* Add padding inside tabs */
+        margin-left: 10px;
+    }
+
+    .nav-link {
+        margin-top: 8px; /* Reduce spacing for compact design */
+        padding: 8px; /* Adjust padding for smaller links */
+        font-size: 14px; /* Increase font size for readability */
+        text-align: center;
+        color: #3498db; /* Primary blue color */
+        border-radius: 4px; /* Add slight rounding for links */
+        transition: background-color 0.3s; /* Smooth hover transition */
+    }
+
+    .nav-link:hover {
+        background-color: #ecf0f1; /* Light gray background on hover */
+    }
+
+    .nav-link.active {
+        background-color: #1688d3; /* Highlight active tab */
+        color: white;
+    }
+
+    .tabContent {
+        background-color: #fff; /* White background */
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow */
+        margin-top: 20px; /* Add spacing above content */
+        padding: 12px; /* Slightly larger padding */
+        font-size: 14px; /* Increase font size for clarity */
+        width: 90vw; /* Adjust content width */
+        margin-left: 10px;
+    }
+
+    .ques {
+        font-weight: bold; /* Make questions stand out */
+        color: #2c3e50;
+        margin-bottom: 8px;
+    }
+
+    .ans {
+        color: #7f8c8d; /* Lighter gray */
+        font-size: 12px; /* Adjust answer text size */
+        margin-bottom: 12px;
+    }
+
+    .img {
+        margin-top: 10px;
+        text-align: center;
+        width: 50vw; /* Adjust image width */
+        margin-left: 60px;
+    }
+
+    .img-fluid {
+        width: 100vw; /* Limit image size for responsiveness */
+        height: auto;
+    }
+
+    .btn.searchBtn {
+        background-color: #ee0859;
+        color: white;
+        padding: 12px 15px; /* Adjust padding */
+        border: none;
+        border-radius: 7px;
+        font-size: 14px; /* Slightly larger text size */
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin: 20px 0; /* Space around the button */
+        width: 80vw; /* Full width with some margin */
+        height: auto;
+        text-align: center;
+    }
+
+    .btn.searchBtn:hover {
+        background-color: #ff0000;
+        color: white;
+    }
+}
+
+
+
+@media only screen and (max-width:394px) {
+
+    .DonationTypecontainer {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        width: 100vw; /* Full viewport width */
+        margin: 0; /* Remove margins */
+        padding: 0 10px; /* Add small padding */
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+
+    .section-heading {
+        display: flex;
+        justify-content: center; /* Center align heading */
+        font-size: 18px; /* Increase font size for readability */
+        color: #2c3e50; /* Darker color for emphasis */
+        margin-bottom: 10px; /* Add spacing below heading */
+    }
+
+    .sectionTxt {
+        font-size: 12px; /* Slightly larger text for readability */
+        color: #333; /* Softer black for better contrast */
+        text-align: justify; /* Justify text for neatness */
+        margin-bottom: 15px; /* Add spacing below text */
+    }
+
+    .tabs {
+        background-color: #f7f9fc; /* Light background */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        width: 90vw; /* Slightly smaller width for better fit */
+        margin-bottom: 15px; /* Add spacing below tabs */
+        padding: 10px; /* Add padding inside tabs */
+        margin-left: 10px;
+    }
+
+    .nav-link {
+        margin-top: 8px; /* Reduce spacing for compact design */
+        padding: 8px; /* Adjust padding for smaller links */
+        font-size: 14px; /* Increase font size for readability */
+        text-align: center;
+        color: #3498db; /* Primary blue color */
+        border-radius: 4px; /* Add slight rounding for links */
+        transition: background-color 0.3s; /* Smooth hover transition */
+    }
+
+    .nav-link:hover {
+        background-color: #ecf0f1; /* Light gray background on hover */
+    }
+
+    .nav-link.active {
+        background-color: #1688d3; /* Highlight active tab */
+        color: white;
+    }
+
+    .tabContent {
+        background-color: #fff; /* White background */
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow */
+        margin-top: 20px; /* Add spacing above content */
+        padding: 12px; /* Slightly larger padding */
+        font-size: 14px; /* Increase font size for clarity */
+        width: 90vw; /* Adjust content width */
+        margin-left: 10px;
+    }
+
+    .ques {
+        font-weight: bold; /* Make questions stand out */
+        color: #2c3e50;
+        margin-bottom: 8px;
+    }
+
+    .ans {
+        color: #7f8c8d; /* Lighter gray */
+        font-size: 12px; /* Adjust answer text size */
+        margin-bottom: 12px;
+    }
+
+    .img {
+        display: flex;
+        margin-top: 10px;
+        text-align: center;
+        width: 50vw; /* Adjust image width */
+        justify-content:center ;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+    .img-fluid {
+        width: 100vw; /* Limit image size for responsiveness */
+        height: auto;
+    }
+
+    .btn.searchBtn {
+        background-color: #ee0859;
+        color: white;
+        padding: 12px 15px; /* Adjust padding */
+        border: none;
+        border-radius: 7px;
+        font-size: 14px; /* Slightly larger text size */
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin: 20px 0; /* Space around the button */
+        width: 80vw; /* Full width with some margin */
+        height: auto;
+        text-align: center;
+    }
+
+    .btn.searchBtn:hover {
+        background-color: #ff0000;
+        color: white;
+    }
+}
+
+
+
+
+@media only screen and (max-width:376px) {
+
+    .DonationTypecontainer {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        width: 100vw; /* Full viewport width */
+        margin: 0; /* Remove margins */
+        padding: 0 10px; /* Add small padding */
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+
+    .section-heading {
+        display: flex;
+        justify-content: center; /* Center align heading */
+        font-size: 18px; /* Increase font size for readability */
+        color: #2c3e50; /* Darker color for emphasis */
+        margin-bottom: 10px; /* Add spacing below heading */
+    }
+
+    .sectionTxt {
+        font-size: 12px; /* Slightly larger text for readability */
+        color: #333; /* Softer black for better contrast */
+        text-align: justify; /* Justify text for neatness */
+        margin-bottom: 15px; /* Add spacing below text */
+    }
+
+    .tabs {
+        background-color: #f7f9fc; /* Light background */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        width: 90vw; /* Slightly smaller width for better fit */
+        margin-bottom: 15px; /* Add spacing below tabs */
+        padding: 10px; /* Add padding inside tabs */
+        margin-left: 10px;
+    }
+
+    .nav-link {
+        margin-top: 8px; /* Reduce spacing for compact design */
+        padding: 8px; /* Adjust padding for smaller links */
+        font-size: 14px; /* Increase font size for readability */
+        text-align: center;
+        color: #3498db; /* Primary blue color */
+        border-radius: 4px; /* Add slight rounding for links */
+        transition: background-color 0.3s; /* Smooth hover transition */
+    }
+
+    .nav-link:hover {
+        background-color: #ecf0f1; /* Light gray background on hover */
+    }
+
+    .nav-link.active {
+        background-color: #1688d3; /* Highlight active tab */
+        color: white;
+    }
+
+    .tabContent {
+        background-color: #fff; /* White background */
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow */
+        margin-top: 20px; /* Add spacing above content */
+        padding: 12px; /* Slightly larger padding */
+        font-size: 14px; /* Increase font size for clarity */
+        width: 90vw; /* Adjust content width */
+        margin-left: 10px;
+    }
+
+    .ques {
+        font-weight: bold; /* Make questions stand out */
+        color: #2c3e50;
+        margin-bottom: 8px;
+    }
+
+    .ans {
+        color: #7f8c8d; /* Lighter gray */
+        font-size: 12px; /* Adjust answer text size */
+        margin-bottom: 12px;
+    }
+
+    .img {
+        margin-top: 10px;
+        text-align: center;
+        width: 60vw; /* Adjust image width */
+    }
+
+    .img-fluid {
+        width: 100vw; /* Limit image size for responsiveness */
+        height: auto;
+    }
+
+    .btn.searchBtn {
+        background-color: #ee0859;
+        color: white;
+        padding: 12px 15px; /* Adjust padding */
+        border: none;
+        border-radius: 7px;
+        font-size: 14px; /* Slightly larger text size */
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin: 20px 0; /* Space around the button */
+        width: 80vw; /* Full width with some margin */
+        height: auto;
+        text-align: center;
+    }
+
+    .btn.searchBtn:hover {
+        background-color: #ff0000;
+        color: white;
+    }
+}
+
+
+
+@media only screen and (max-width: 321px) {
+    .DonationTypecontainer  {
+
+        /* Stack items vertically */
+        width: 100vw; /* Full width of the viewport */
+         /* Prevent restrictions on width */
+        margin: 0; /* Center the container horizontally */
+        padding: 0 10px; /* Minimal padding for narrow screens */
+        box-sizing: border-box; /* Ensure padding doesn't affect width */
+    
+    }
+   
+    .section-heading {
+        display: flex;
+        font-size: 15px; /* Slightly larger for better readability */
+        color: #2c3e50; /* Dark color for the heading */
+   justify-content: center;
+       /* Center-align headings */
+    }
+    
+    .sectionTxt {
+        font-size: 10px; /* Adjust text size */
+        color: #000000; /* Slightly lighter text color */
+        text-align: justify; /* Align text for readability */
+    }
+    
+    .tabs {
+        background-color: #f7f9fc; /* Light background for tabs */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Subtle shadow */
+        width: 90vw; /* Full width */
+        margin-bottom: 10px; /* Space below tabs */
+       
+    }
+    
+    .nav-link {
+        margin-top: 10px;
+        padding: 10px 5px; /* Add padding for touch targets */
+        color: #3498db; /* Semi-bold text color */
+        font-size: 6px; /* Adjusted for narrow screens */
+        text-align: center; /* Center-align links */
+        width: 85vw; /* Full width */
+        transition: background-color 0.3s; /* Smooth transition */
+    }
+    
+    .nav-link:hover {
+        background-color: #ecf0f1; /* Change background on hover */
+    }
+    
+    .nav-link.active {
+        background-color: #1688d3; /* Active tab color */
+        color: white; /* White text for active tab */
+    }
+    
+    .tabContent {
+        background-color: #fff; /* White background for the content area */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+        margin-top: 15px; /* Space above the content */
+        padding: 10px; /* Adjust padding for narrow screens */
+        font-size: 12px; /* Content font size */
+        width: 90vw;
+    }
+    
+    .ques {
+        font-weight: bold; /* Bold questions */
+        color: #2c3e50; /* Dark color for questions */
+        margin-bottom: 5px; /* Space below questions */
+    }
+    
+    .ans {
+        color: #7f8c8d; /* Gray color for answers */
+        margin-bottom: 10px; /* Space below answers */
+        font-size: 8px; /* Adjust text size */
+        width: 80vw;
+    }
+    
+    .img {
+        margin-top: 15px; /* Space above the image */
+        text-align: center; /* Center the image */
+        width: 50vw;
+    }
+    
+    .img-fluid {
+        width: 60vw; /* Responsive image */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .btn.searchBtn {
+        background-color: #ee0859; /* Button background color */
+        color: white; /* Button text color */
+        padding: 10px; /* Button padding */
+        border: none; /* No border */
+        border-radius: 7px; /* Rounded corners */
+        font-size: 10px; /* Button text size */
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: background-color 0.3s; /* Smooth transition for hover */
+        margin: 15px 0; /* Space around the button */
+        width: 80vw; /* Full-width button */
+        height: auto;
+    }
+    
+    .btn.searchBtn:hover {
+        background-color: #ff0000; /* Change button background on hover */
+        color: white; /* White text on hover */
+    }
+}

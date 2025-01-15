@@ -1,0 +1,188 @@
+/* Base styles */
+.signup-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 400px; /* Base maximum width */
+  width: 100%; /* Allow the container to shrink */
+  margin: 50px auto; /* Center with margin */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff; /* Optional background color */
+}
+
+.signup-page-container h4 {
+  margin-bottom: 20px;
+}
+
+.signup-page-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.signup-page-container form div {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.signup-page-container label {
+  margin-bottom: 5px;
+}
+
+.signup-page-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px; /* Base font size */
+}
+
+.signup-page-container button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
+  font-size: 16px; /* Base button font size */
+}
+
+.signup-page-container button:hover {
+  background-color: #ed4700;
+}
+
+.signup-page-container.login-link {
+  margin-top: 20px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding-right: 40px; /* Space for the eye icon */
+  box-sizing: border-box;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 10px; /* Adjust based on padding and layout */
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive Styles */
+
+/* For devices up to 2561px */
+@media (max-width: 2561px) {
+  .signup-page-container {
+    max-width: 1000px;
+  }
+
+  .signup-page-container input, 
+  .signup-page-container button {
+    font-size: 20px;
+  }
+}
+
+/* For devices up to 1441px */
+@media (max-width: 1441px) {
+  .signup-page-container {
+    max-width: 700px;
+  }
+
+  .signup-page-container input, 
+  .signup-page-container button {
+    font-size: 18px;
+  }
+}
+
+/* For devices up to 1369px */
+@media (max-width: 1369px) {
+  .signup-page-container {
+    max-width: 600px;
+  }
+
+  .signup-page-container input, 
+  .signup-page-container button {
+    font-size: 17px;
+  }
+}
+
+/* For devices up to 1025px */
+@media (max-width: 1025px) {
+  .signup-page-container {
+    max-width: 500px;
+  }
+}
+
+/* For devices up to 769px */
+@media (max-width: 769px) {
+  .signup-page-container {
+    max-width: 500px;
+  }
+}
+
+/* For devices up to 426px */
+@media (max-width: 426px) {
+  .signup-page-container {
+    padding: 20px;
+   width: 90vw;
+   margin: 20px;
+  }
+}
+
+/* For devices up to 394px */
+@media (max-width: 394px) {
+    .signup-page-container {
+    padding: 15px;
+   width: 100vw;
+   margin: 20px;
+  }
+
+  .signup-page-container input, 
+  .signup-page-container button {
+    font-size: 15px;
+    
+  }
+}
+
+
+/* For devices up to 376px */
+@media (max-width: 376px) {
+  .signup-page-container {
+    padding: 15px;
+   width: 100vw;
+   margin: 20px;
+  }
+
+  .signup-page-container input, 
+  .signup-page-container button {
+    font-size: 15px;
+  }
+}
+
+/* For devices up to 321px */
+@media (max-width: 321px) {
+  .signup-page-container {
+    padding: 15px;
+    width: 100vw;
+    
+  }
+
+  .signup-page-container input, 
+  .signup-page-container button {
+    font-size: 14px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,103 @@
+import axios from 'axios';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Login.css'; // Import your CSS file for styling
+
+const Login = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [successMessage, setSuccessMessage] = useState('');
+    const [error, setError] = useState('');
+    const navigate = useNavigate(); // Hook for navigation
+
+    const handleLogin = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await axios.post('http://localhost:5000/auth/login', {
+                email,
+                password
+            });
+            setSuccessMessage('Login successful!'); // Set success message
+            setError(''); // Clear any previous error message
+            localStorage.setItem('token', response.data.jwtToken); // Store JWT token in local storage
+            alert('Login successful!'); // Alert user
+            navigate('/'); // Navigate to the home page or dashboard
+        } catch (err) {
+            console.error(err);
+            setError('Login failed: ' + (err.response?.data.message || 'Unknown error')); // Update error handling
+            setSuccessMessage(''); // Clear any previous success message
+        }
+    };
+
+    return (
+        <div className="login-container">
+            <h2>Login</h2>
+            <form onSubmit={handleLogin}>
+                <div>
+                    <label>Email:</label>
+                    <input
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                    />
+                </div>
+                <div>
+                    <label>Password:</label>
+                    <input
+                        type="password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        required
+                    />
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            {successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}
+            {error && <p style={{ color: 'red' }}>{error}</p>}
+        </div>
+    );
+};
+
+export default Login;
+
+
+
+
+
+
+//Auth Controller
+
+exports.login = async (req, res) => {
+    const { email, password } = req.body;
+    try {
+        const user = await User.findOne({ email });
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+
+        // Compare passwords
+        const isPasswordValid = await bcrypt.compare(password, user.password);
+        if (!isPasswordValid) {
+            return res.status(401).json({ message: 'Invalid password' });
+        }
+
+        // Generate JWT token
+        const token = jwt.sign({ userId: user._id }, JWT_SECRET, { expiresIn: '1h' });
+
+        // Send token to client
+        res.json({ jwtToken: token });
+    } catch (error) {
+        res.status(500).json({ message: 'Login failed', error: error.message });
+    }
+};
+
+
+
+
+
+
+
+
+
+

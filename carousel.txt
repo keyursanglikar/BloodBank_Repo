@@ -1,0 +1,43 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: auto; /* Full width of the viewport */
+    height: auto; /* Set height to 50% of the viewport */
+    overflow: hidden; /* Hide overflow for better aesthetics */
+    border:8px solid rgb(255, 0, 0);
+   
+  }
+  
+  .carousel-image {
+    width: 100%; /* Make the image responsive */
+    height: 100%;; /* Make the image fill the container */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    object-fit: cover; /* Cover the area without distortion */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for image changes */
+  }
+  
+  .arrow {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    border: none;
+    font-size: 2rem; /* Adjust font size for arrows */
+    cursor: pointer;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    padding: 0.5rem; /* Padding for better click area */
+    z-index: 1; /* Ensure arrows are above the image */
+  }
+  
+  .arrow.left {
+    left: 10px; /* Position for left arrow */
+  }
+  
+  .arrow.right {
+    right: 10px; /* Position for right arrow */
+  }
+  

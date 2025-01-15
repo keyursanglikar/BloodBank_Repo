@@ -1,0 +1,588 @@
+/* VBDCamp.css */
+
+/* Container styles */
+.vBD-container {
+  max-width: 100vw; /* Default for extra-large screens */
+  margin: 20px auto; /* Center the container */
+  padding: 20px; /* Add padding around the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Subtle shadow */
+  background-color: #fff; /* White background */
+}
+
+/* Form title styles */
+.form-title {
+  font-size: 34px; /* Title size */
+  text-align: center; /* Center the title */
+  color: #e10b0b; /* Darker text color */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+/* Form styles */
+.register-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribute items evenly */
+}
+
+/* Form group styles */
+.form-group {
+  flex: 1 1 45%; /* Flex basis allows for two columns */
+  margin-bottom: 15px; /* Space between form groups */
+  min-width: 300px; /* Ensure a minimum width for smaller screens */
+}
+
+/* Label styles */
+label {
+  font-size: 16px; /* Label font size */
+  color: #322f2f; /* Darker label color */
+  display: block; /* Block display for label */
+  margin-bottom: 5px; /* Space below label */
+}
+
+/* Input styles */
+.form-input, .form-textarea, .form-select {
+  width: 100%; /* Full width for inputs */
+  padding: 10px; /* Padding inside inputs */
+  border: 1px solid #bdc3c7; /* Light gray border */
+  border-radius: 4px; /* Slightly rounded corners */
+  transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+/* Textarea specific styles */
+.form-textarea {
+  resize: vertical; /* Allow vertical resizing */
+}
+
+/* Input focus styles */
+.form-input:focus, .form-textarea:focus, .form-select:focus {
+  border-color: #2980b9; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Button styles */
+.form-button {
+  padding: 10px; /* Button padding */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #e3190a; /* Button color */
+  color: #fff; /* White text */
+  font-size: 16px; /* Button font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color change */
+  align-self: flex-start; /* Align button at the start */
+}
+
+/* Button hover styles */
+.form-button:hover {
+  background-color: #1c6698; /* Darker button color on hover */
+}
+
+/* Responsive styles */
+
+
+@media (max-width: 2561px) {
+  .vBD-container {
+    max-width: 60vw; /* Centered and narrower */
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+
+  .form-title {
+    font-size: 36px; /* Large title for large screens */
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  .form-input, .form-textarea, .form-select {
+    width: 100%; /* Wide inputs */
+    padding: 18px;
+    font-size: 20px;
+  }
+
+  .form-button {
+    font-size: 20px;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 1441px) {
+  .vBD-container {
+    max-width: 85vw; /* Slightly reduced width for larger medium screens */
+    margin: 20px auto; /* Centered with a bit more margin */
+    padding: 16px; /* Increased padding */
+    border-radius: 10px; /* Slightly more rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slightly larger shadow */
+  }
+
+  .form-title {
+    font-size: 28px; /* Larger title size for better readability */
+  }
+
+  label {
+    font-size: 16px; /* Slightly larger label font */
+  }
+
+  .form-input, .form-textarea, .form-select {
+    width: 100%; /* Adjusted input width for larger screens */
+    padding: 12px; /* More padding for comfort */
+    font-size: 16px; /* Slightly larger font for readability */
+  }
+
+  .form-button {
+    width: 100vw;
+    font-size: 16px; /* Slightly larger button text */
+    padding: 12px; /* Increased padding for better usability */
+  
+  }
+}
+
+
+/* Medium-large screens (up to 1369px) */
+@media (max-width: 1369px) {
+  .vBD-container {
+    max-width: 85vw; /* Slightly reduced width for larger medium screens */
+    margin: 20px auto; /* Centered with a bit more margin */
+    padding: 16px; /* Increased padding */
+    border-radius: 10px; /* Slightly more rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slightly larger shadow */
+  }
+
+  .form-title {
+    font-size: 28px; /* Larger title size for better readability */
+  }
+
+  label {
+    font-size: 16px; /* Slightly larger label font */
+  }
+
+  .form-input, .form-textarea, .form-select {
+    width: 100%; /* Adjusted input width for larger screens */
+    padding: 12px; /* More padding for comfort */
+    font-size: 16px; /* Slightly larger font for readability */
+  }
+
+  .form-button {
+    width: 100vw;
+    font-size: 16px; /* Slightly larger button text */
+    padding: 12px; /* Increased padding for better usability */
+  
+  }
+}
+
+
+/* Medium screens (769px to 1024px) */
+@media (max-width: 1025px) {
+  .vBD-container {
+    max-width: 90vw; /* Slightly reduced width */
+    margin: 15px auto; /* Centered with a margin */
+    padding: 12px;
+    border-radius: 8px; /* Medium rounded corners */
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  }
+
+  .form-title {
+    font-size: 26px; /* Medium title size */
+  }
+
+  label {
+    font-size: 15px;
+  }
+
+  .form-input, .form-textarea, .form-select {
+    width: 100%; /* Adjusted input width */
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .form-button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+
+/* Small screens (481px to 768px) */
+
+@media (max-width: 769px) {
+  .vBD-container {
+    max-width: 100vw; /* Ensure full screen width */
+    margin: 10px 10px; /* Reduced margin */
+    padding: 10px; /* Smaller padding */
+    border-radius: 6px; /* Slightly smaller rounded corners */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); /* Lighter shadow */
+    background-color: #fff; /* White background */
+  }
+  
+  /* Form title styles */
+  .form-title {
+    font-size: 24px; /* Smaller title size */
+    text-align: center; /* Center the title */
+    color: #e10b0b; /* Darker text color */
+    margin-bottom: 10px; /* Less space below the title */
+  }
+  
+  /* Form styles */
+  .register-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  /* Form group styles */
+  .form-group {
+    flex: 1 1 100%; /* Full width for form groups */
+    margin-bottom: 10px; /* Smaller space between form groups */
+    min-width: 100%; /* No fixed min-width */
+
+  }
+  
+  /* Label styles */
+  label {
+    font-size: 14px; /* Smaller label font size */
+    color: #322f2f; /* Darker label color */
+    display: block; /* Block display for label */
+    margin-bottom: 3px; /* Reduced space below label */
+
+  }
+  
+  /* Input styles */
+  .form-input, .form-textarea, .form-select {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 80vw; /* Full width for inputs */
+    padding: 8px; /* Smaller padding */
+    font-size: 14px; /* Smaller font size */
+    border: 1px solid #bdc3c7; /* Light gray border */
+    border-radius: 3px; /* Slightly rounded corners */
+    transition: border-color 0.3s ease; /* Smooth border transition */
+  }
+  
+  /* Textarea specific styles */
+  .form-textarea {
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  /* Input focus styles */
+  .form-input:focus, .form-textarea:focus, .form-select:focus {
+    border-color: #2980b9; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  /* Button styles */
+  .form-button {
+    padding: 8px; /* Reduced button padding */
+    border: none; /* Remove default border */
+    border-radius: 3px; /* Smaller rounded corners */
+    background-color: #e3190a; /* Button color */
+    color: #fff; /* White text */
+    font-size: 14px; /* Smaller font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+    align-self: center; /* Center the button */
+  }
+  
+  /* Button hover styles */
+  .form-button:hover {
+    background-color: #1c6698; /* Darker button color on hover */
+  }
+}
+
+
+@media (max-width: 426px) {
+  .vBD-container {
+   width: 100vw; /* Ensure full screen width */
+    margin: 10px 20px; /* Reduced margin */
+    padding: 10px; /* Smaller padding */
+    border-radius: 6px; /* Slightly smaller rounded corners */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); /* Lighter shadow */
+    background-color: #fff; /* White background */
+  }
+  
+  /* Form title styles */
+  .form-title {
+    font-size: 24px; /* Smaller title size */
+    text-align: center; /* Center the title */
+    color: #e10b0b; /* Darker text color */
+    margin-bottom: 10px; /* Less space below the title */
+  }
+  
+  /* Form styles */
+  .register-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  /* Form group styles */
+  .form-group {
+    flex: 1 1 100%; /* Full width for form groups */
+    margin-bottom: 10px; /* Smaller space between form groups */
+    min-width: 100%; /* No fixed min-width */
+
+  }
+  
+  /* Label styles */
+  label {
+    font-size: 14px; /* Smaller label font size */
+    color: #322f2f; /* Darker label color */
+    display: block; /* Block display for label */
+    margin-bottom: 3px; /* Reduced space below label */
+    
+  }
+  
+  /* Input styles */
+  .form-input, .form-textarea, .form-select {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 80vw; /* Full width for inputs */
+    padding: 8px; /* Smaller padding */
+    font-size: 14px; /* Smaller font size */
+    border: 1px solid #bdc3c7; /* Light gray border */
+    border-radius: 3px; /* Slightly rounded corners */
+    transition: border-color 0.3s ease; /* Smooth border transition */
+  }
+  
+  /* Textarea specific styles */
+  .form-textarea {
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  /* Input focus styles */
+  .form-input:focus, .form-textarea:focus, .form-select:focus {
+    border-color: #2980b9; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  /* Button styles */
+  .form-button {
+    padding: 8px; /* Reduced button padding */
+    border: none; /* Remove default border */
+    border-radius: 3px; /* Smaller rounded corners */
+    background-color: #e3190a; /* Button color */
+    color: #fff; /* White text */
+    font-size: 14px; /* Smaller font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+    align-self: center; /* Center the button */
+    width: 100%;
+  }
+  
+  /* Button hover styles */
+  .form-button:hover {
+    background-color: #1c6698; /* Darker button color on hover */
+  }
+}
+@media (max-width: 394px) {
+  .vBD-container {
+    max-width: 95vw;
+    margin: 8px 5px;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .form-title {
+    font-size: 20px; /* Smaller title */
+    margin-bottom: 8px;
+  }
+
+  label {
+    font-size: 12px; /* Small label font */
+  }
+
+  .form-input, .form-textarea, .form-select {
+    width: 90vw; /* Very narrow input */
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .form-button {
+    font-size: 13px;
+    padding: 6px;
+    width: 100%;
+  }
+}
+
+
+
+/* Extra small screens (321px to 480px) */
+
+@media (max-width: 375px) {
+  .vBD-container {
+    max-width: 100vw; /* Ensure full screen width */
+    margin: 10px 10px; /* Reduced margin */
+    padding: 10px; /* Smaller padding */
+    border-radius: 6px; /* Slightly smaller rounded corners */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); /* Lighter shadow */
+    background-color: #fff; /* White background */
+  }
+  
+  /* Form title styles */
+  .form-title {
+    font-size: 24px; /* Smaller title size */
+    text-align: center; /* Center the title */
+    color: #e10b0b; /* Darker text color */
+    margin-bottom: 10px; /* Less space below the title */
+  }
+  
+  /* Form styles */
+  .register-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  /* Form group styles */
+  .form-group {
+    flex: 1 1 100%; /* Full width for form groups */
+    margin-bottom: 10px; /* Smaller space between form groups */
+    min-width: 100%; /* No fixed min-width */
+
+  }
+  
+  /* Label styles */
+  label {
+    font-size: 14px; /* Smaller label font size */
+    color: #322f2f; /* Darker label color */
+    display: block; /* Block display for label */
+    margin-bottom: 3px; /* Reduced space below label */
+    
+  }
+  
+  /* Input styles */
+  .form-input, .form-textarea, .form-select {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 80vw; /* Full width for inputs */
+    padding: 8px; /* Smaller padding */
+    font-size: 14px; /* Smaller font size */
+    border: 1px solid #bdc3c7; /* Light gray border */
+    border-radius: 3px; /* Slightly rounded corners */
+    transition: border-color 0.3s ease; /* Smooth border transition */
+  }
+  
+  /* Textarea specific styles */
+  .form-textarea {
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  /* Input focus styles */
+  .form-input:focus, .form-textarea:focus, .form-select:focus {
+    border-color: #2980b9; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  /* Button styles */
+  .form-button {
+    padding: 8px; /* Reduced button padding */
+    border: none; /* Remove default border */
+    border-radius: 3px; /* Smaller rounded corners */
+    background-color: #e3190a; /* Button color */
+    color: #fff; /* White text */
+    font-size: 14px; /* Smaller font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+    align-self: center; /* Center the button */
+    width: 100%;
+  }
+  
+  /* Button hover styles */
+  .form-button:hover {
+    background-color: #1c6698; /* Darker button color on hover */
+  }
+}
+
+
+@media (max-width: 321px) {
+  .vBD-container {
+    max-width: 100vw; /* Ensure full screen width */
+    margin: 10px 10px; /* Reduced margin */
+    padding: 10px; /* Smaller padding */
+    border-radius: 6px; /* Slightly smaller rounded corners */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); /* Lighter shadow */
+    background-color: #fff; /* White background */
+  }
+  
+  /* Form title styles */
+  .form-title {
+    font-size: 24px; /* Smaller title size */
+    text-align: center; /* Center the title */
+    color: #e10b0b; /* Darker text color */
+    margin-bottom: 10px; /* Less space below the title */
+  }
+  
+  /* Form styles */
+  .register-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  /* Form group styles */
+  .form-group {
+    flex: 1 1 100%; /* Full width for form groups */
+    margin-bottom: 10px; /* Smaller space between form groups */
+    min-width: 100%; /* No fixed min-width */
+color: #e10b0b;
+  }
+  
+  /* Label styles */
+  label {
+    font-size: 14px; /* Smaller label font size */
+    color: #322f2f; /* Darker label color */
+    display: block; /* Block display for label */
+    margin-bottom: 3px; /* Reduced space below label */
+    
+  }
+  
+  /* Input styles */
+  .form-input, .form-textarea, .form-select {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 80vw; /* Full width for inputs */
+    padding: 8px; /* Smaller padding */
+    font-size: 14px; /* Smaller font size */
+    border: 1px solid #bdc3c7; /* Light gray border */
+    border-radius: 3px; /* Slightly rounded corners */
+    transition: border-color 0.3s ease; /* Smooth border transition */
+  }
+  
+  /* Textarea specific styles */
+  .form-textarea {
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  /* Input focus styles */
+  .form-input:focus, .form-textarea:focus, .form-select:focus {
+    border-color: #2980b9; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  /* Button styles */
+  .form-button {
+    padding: 8px; /* Reduced button padding */
+    border: none; /* Remove default border */
+    border-radius: 3px; /* Smaller rounded corners */
+    background-color: #e3190a; /* Button color */
+    color: #fff; /* White text */
+    font-size: 14px; /* Smaller font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+    align-self: center; /* Center the button */
+    width: 100%;
+  }
+  
+  /* Button hover styles */
+  .form-button:hover {
+    background-color: #1c6698; /* Darker button color on hover */
+  }
+}

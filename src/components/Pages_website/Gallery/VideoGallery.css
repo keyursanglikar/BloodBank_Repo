@@ -1,0 +1,52 @@
+/* src/components/VideoGallery.css */
+
+.video-gallery-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.video-gallery-header {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.video-container {
+  width: 300px;
+  background-color: #111;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.video-description {
+  margin-top: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .video-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,102 @@
+/* BloodDonorSignup.css */
+ .signup-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  /* Light gray background */
+}
+
+.signup-container .signup-box {
+  margin-top: 30px; /* Space above the form */
+  display: flex;
+  flex-direction: row; /* Stack heading and form vertically */
+  overflow-x: auto;
+  flex: 1; /* Enables horizontal scrolling if needed */
+  padding: 20px;
+  background-color: #fff; /* White background for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+  max-width: 100%; /* Full width of container */
+  gap: 20px; /* Space between form groups */
+  justify-content: flex-start; /* Align content to the start */
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  /* Center the heading */
+  width: 100%;
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+ .heading h2 {
+  text-align: center;
+  /* Background for emphasis */
+  color: #dc3545; /* Bootstrap danger color for emphasis */
+  margin: 0; /* Remove margin for heading */
+  padding: 10px; /* Optional padding for aesthetics */
+}
+
+.signup-container .form-section {
+  min-width: 300px; /* Minimum width for each section */
+  flex: 3; /* Allow sections to grow and fill available space */
+}
+
+.signup-container .form-group {
+  margin-bottom: 15px; /* Space between input fields */
+}
+
+.signup-container label {
+  display: block; /* Block display for labels */
+  font-weight: bold; /* Bold labels for emphasis */
+}
+
+.signup-container input[type="text"],
+.signup-container input[type="number"],
+.signup-container input[type="tel"],
+.signup-container input[type="email"],
+.signup-container select,
+.signup-container textarea {
+  width: 100%; /* Full width inputs */
+  padding: 8px; /* Padding for inputs */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding in width */
+  font-size: 16px; /* Consistent font size */
+}
+
+.signup-container textarea {
+  resize: vertical; /* Allow vertical resizing */
+  min-height: 80px; /* Minimum height for text area */
+}
+
+.signup-container .captcha-container {
+  display: flex; /* Flexbox for captcha layout */
+  align-items: center; /* Center items vertically */
+  gap: 10px; /* Space between captcha elements */
+}
+
+.signup-container button {
+  display: flex;
+  background-color: #de1529; /* Bootstrap danger color */
+  color: #fff; /* White text for contrast */
+  padding: 5px; /* Padding for buttons */
+  border: 2px solid red; /* No border */
+  /* Rounded corners */
+  border-radius: 4px;
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  margin-bottom: 25px; /* Space below buttons */
+}
+
+.signup-container button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.signup-container .captcha-container button {
+  padding: 5px; /* Padding for refresh button */
+  margin: 0; /* Remove margin for refresh button */
+  margin-bottom: 16px;
+  border-radius: 4px; /* Rounded corners for refresh button */
+}

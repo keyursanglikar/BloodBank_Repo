@@ -1,0 +1,194 @@
+/* Base Styles for Contact Section */
+.contact-section {
+  padding: 60px 0;
+  background: linear-gradient(to right, #8A2387, #E94057, #F27121); /* Violet gradient background */
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Add padding for smaller screens */
+}
+
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7); /* Add shadow around the row */
+  border-radius: 10px; /* Rounded corners for the row */
+  overflow: hidden; /* Ensure child elements respect border radius */
+}
+
+.contact-form-col,
+.contact-info-col {
+  flex: 1;
+  padding: 20px; /* Add padding for better spacing */
+  min-width: 300px; /* Ensure minimum width for smaller columns */
+}
+
+.contact-form-col {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for contrast */
+}
+
+.contact-info-col {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for contrast */
+}
+
+.contact-title,
+.info-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fc0000; /* Red text color for titles */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.form-control:focus {
+  border-color: #E94057; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(233, 64, 87, 0.5); /* Shadow on focus */
+}
+
+.btn-primary {
+  background-color: #E94057; /* Button background color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.btn-primary:hover {
+  background-color: #8A2387; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly scale button on hover */
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.icon-wrapper {
+  margin-right: 10px;
+  color: #E94057; /* Icon color */
+}
+
+.text-wrapper {
+  font-size: 16px;
+  color: #333; /* Text color for info */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .contact-row {
+    flex-direction: column; /* Stack columns on small screens */
+  }
+
+  .contact-form-col,
+  .contact-info-col {
+    margin: 0 0 20px; /* Add margin between stacked elements */
+  }
+
+  .contact-title,
+  .info-title {
+    font-size: 20px; /* Reduce title size for smaller screens */
+  }
+
+  .form-control {
+    font-size: 14px; /* Adjust input text size for smaller screens */
+  }
+
+  .btn-primary {
+    padding: 8px 12px; /* Adjust button padding */
+    font-size: 14px; /* Adjust button text size */
+  }
+
+  .text-wrapper {
+    font-size: 14px; /* Adjust info text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-title,
+  .info-title {
+    font-size: 18px; /* Further reduce title size for very small screens */
+  }
+
+  .contact-container {
+    padding: 0 10px; /* Add extra padding for ultra-small screens */
+  }
+
+  .btn-primary {
+    padding: 6px 10px; /* Smaller button padding */
+    font-size: 12px; /* Smaller button text size */
+    width: 200px;
+    height: 40px;
+  }
+}
+@media (max-width: 394px) {
+  .contact-title,
+  .info-title {
+    font-size: 18px; /* Further reduce title size for very small screens */
+  }
+
+  .contact-container {
+    padding: 0 10px; /* Add extra padding for ultra-small screens */
+  }
+
+  .btn-primary {
+    padding: 6px 10px; /* Smaller button padding */
+    font-size: 12px; /* Smaller button text size */
+    width: 200px;
+    height: 40px;
+  }
+}
+
+
+@media (max-width: 376px) {
+  .contact-title,
+  .info-title {
+    font-size: 18px; /* Further reduce title size for very small screens */
+  }
+
+  .contact-container {
+    padding: 0 10px; /* Add extra padding for ultra-small screens */
+  }
+
+  .btn-primary {
+    padding: 6px 10px; /* Smaller button padding */
+    font-size: 12px; /* Smaller button text size */
+    width: 200px;
+    height: 40px;
+  }
+}
+
+
+
+@media (max-width: 321px) {
+  .contact-title,
+  .info-title {
+    font-size: 18px; /* Further reduce title size for very small screens */
+  }
+
+  .contact-container {
+    padding: 0 10px; /* Add extra padding for ultra-small screens */
+  }
+
+  .btn-primary {
+    padding: 20px 30px; /* Smaller button padding */
+    font-size: 12px; /* Smaller button text size */
+    height: 40px;
+    width: 200px;
+  
+  }
+}
